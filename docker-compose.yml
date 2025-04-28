@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  grpc_server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: grpc_server
+    ports:
+      - "50051:50051"
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  streamlit_ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: streamlit_ui
+    ports:
+      - "8501:8501"
+    depends_on:
+      - grpc_server
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
