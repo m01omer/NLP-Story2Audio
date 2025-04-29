@@ -1,30 +1,28 @@
-version: '3.9'
 
 services:
-  grpc_server:
-    build:
-      context: ./server
-      dockerfile: Dockerfile
-    container_name: grpc_server
-    ports:
-      - "50051:50051"
-    restart: unless-stopped
-    networks:
-      - app-network
-
-  streamlit_ui:
+  server:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: server/dockerfile
+    image: project-server:latest
+    container_name: grpc_server
+    networks:
+      - nlpnet
+    expose:
+      - "50051"
+
+  ui:
+    build:
+      context: .
+      dockerfile: DOCKERFILE
+    image: project-ui:latest
     container_name: streamlit_ui
     ports:
       - "8501:8501"
     depends_on:
-      - grpc_server
-    restart: unless-stopped
+      - server
     networks:
-      - app-network
+      - nlpnet
 
 networks:
-  app-network:
-    driver: bridge
+  nlpnet:
