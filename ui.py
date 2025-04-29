@@ -6,10 +6,10 @@ from generated import  massanger_pb2
 from generated import massanger_pb2_grpc
 
 # Setup gRPC connection
-channel = grpc.insecure_channel("localhost:50051")
+channel = grpc.insecure_channel("server:50051")
 stub = massanger_pb2_grpc.TTSStub(channel)
 
-st.title("🗣️ Real-Time Text to Speech (gRPC Powered)")
+st.title("🗣️ Real-Time Text to Speech")
 
 text = st.text_area("Enter Text to Speak", "Hey how are you?")
 description = st.text_input("Speaker Description", "A male speaker with a deep voice and animated speech")
