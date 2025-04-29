@@ -7,7 +7,7 @@ def run():
     stub = massanger_pb2_grpc.TTSStub(channel)
 
     request = massanger_pb2.TextRequest(
-        text="Hey how are you? This is Muhammad Omer, the man who will become King of the Pirates.",
+        text="Hey how are you?",
         description=(
             "A male speaker with a deep voice "
             "and animated speech with a moderate speed and pitch."
