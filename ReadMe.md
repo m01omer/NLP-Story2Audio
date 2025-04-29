@@ -4,7 +4,18 @@ This project implements a **Real-Time Text to Speech (TTS)** system leveraging *
 
 ## Project Structure
 
-/project├── /server                     # gRPC server implementation│   ├── Dockerfile             # Dockerfile for building the gRPC server│   ├── requirements.txt       # Python dependencies for the server│   └── generated/            # Auto-generated files for gRPC├── /ui                        # Streamlit UI implementation│   ├── Dockerfile             # Dockerfile for building the UI container│   ├── requirements.txt       # Python dependencies for the UI│   └── ui.py                  # Streamlit UI script├── docker-compose.yml         # Docker Compose configuration for multi-container setup├── .dockerignore              # Files and directories to be ignored by Docker└── README.md                  # This file
+/project
+├── /server                     # gRPC server implementation
+│   ├── Dockerfile             # Dockerfile for building the gRPC server
+│   ├── requirements.txt       # Python dependencies for the server
+│   └── generated/            # Auto-generated files for gRPC
+├── /ui                        # Streamlit UI implementation
+│   ├── Dockerfile             # Dockerfile for building the UI container
+│   ├── requirements.txt       # Python dependencies for the UI
+│   └── ui.py                  # Streamlit UI script
+├── docker-compose.yml         # Docker Compose configuration for multi-container setup
+├── .dockerignore              # Files and directories to be ignored by Docker
+└── README.md                  # This file
 ## Prerequisites
 
 * [Docker](https://www.docker.com/get-started)
