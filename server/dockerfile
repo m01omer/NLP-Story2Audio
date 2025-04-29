@@ -1,34 +1,40 @@
-# ------------ Stage 1: Build dependencies ------------
+# Build stage
+FROM python:3.12-slim as builder
 
-FROM python:3.12-slim AS builder
+# Install system dependencies
+RUN apt-get update && apt-get install -y build-essential
 
+# Set working directory
 WORKDIR /app
 
-# Install build tools
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+# Copy server code
+COPY server/ /app/
 
-# Copy only requirements to cache dependencies
-COPY requirements.txt .
+# Copy generated files
+COPY generated/ /app/generated/
 
-# Install Python dependencies into a temporary directory
+# Copy requirements
+COPY requirements.txt /app/
+
+# Install Python dependencies
 RUN pip install --prefix=/install --no-cache-dir -r requirements.txt
 
-# ------------ Stage 2: Final lightweight image ------------
-
+# Production stage
 FROM python:3.12-slim
 
 WORKDIR /app
 
-# Copy installed Python packages from builder stage
-COPY --from=builder /install /usr/local
+# Copy installed packages
+COPY --from=builder /install /usr/local/
 
-# Copy the rest of your application
-COPY . .
+# Copy application code
+COPY server/ /app/
+COPY generated/ /app/generated/
 
-# Expose gRPC port
+# Set PYTHONPATH so 'generated' module is visible
+ENV PYTHONPATH=/app
+
 EXPOSE 50051
 
-# Command to run the server
+# Run the server
 CMD ["python", "server.py"]
