@@ -11,4 +11,6 @@ message TextRequest {
 
 message AudioResponse {
     bytes audio = 1;
+    string status = 2;   // "success" or "error"
+    string message = 3;  // extra info or error
 }
