@@ -14,11 +14,13 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'g
 from generated import massanger_pb2
 from generated import massanger_pb2_grpc
 
+import asyncio
+
 model, prompt_tokenizer, description_tokenizer = load_model()
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 class TTSServicer(massanger_pb2_grpc.TTSServicer):
-    def GenerateSpeech(self, request, context):
+    async def GenerateSpeech(self, request, context):
         try:
             # Tokenize description and text inputs
             desc_inputs = description_tokenizer(request.description, return_tensors="pt").to(device)
@@ -40,21 +42,30 @@ class TTSServicer(massanger_pb2_grpc.TTSServicer):
             buf.seek(0)
 
             # Return the audio response
-            return massanger_pb2.AudioResponse(audio=buf.read())
+            return massanger_pb2.AudioResponse(
+                    audio=buf.read(),
+                    status="success",
+                    message="Audio generated successfully."
+                )
 
         except Exception as e:
             # Handle errors
             context.set_details(str(e))
             context.set_code(grpc.StatusCode.INTERNAL)
-            return massanger_pb2.AudioResponse()
+            return massanger_pb2.AudioResponse(
+                audio=b"",
+                status="error",
+                message=str(e)
+            )
 
-def serve():
-    server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+async def serve():
+    server = grpc.aio.server()
+
     massanger_pb2_grpc.add_TTSServicer_to_server(TTSServicer(), server)
     server.add_insecure_port('[::]:50051')
-    server.start()
+    await server.start()
     print("Server started on port 50051...")
-    server.wait_for_termination()
+    await server.wait_for_termination()
 
 if __name__ == "__main__":
-    serve()
+    asyncio.run(serve())
