@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from . import massanger_pb2 as massanger__pb2
+import tts_service_pb2 as tts__service__pb2
 
 
 class TTSStub(object):
@@ -16,8 +16,8 @@ class TTSStub(object):
         """
         self.GenerateSpeech = channel.unary_unary(
                 '/TTS/GenerateSpeech',
-                request_serializer=massanger__pb2.TextRequest.SerializeToString,
-                response_deserializer=massanger__pb2.AudioResponse.FromString,
+                request_serializer=tts__service__pb2.TextRequest.SerializeToString,
+                response_deserializer=tts__service__pb2.AudioResponse.FromString,
                 )
 
 
@@ -35,8 +35,8 @@ def add_TTSServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'GenerateSpeech': grpc.unary_unary_rpc_method_handler(
                     servicer.GenerateSpeech,
-                    request_deserializer=massanger__pb2.TextRequest.FromString,
-                    response_serializer=massanger__pb2.AudioResponse.SerializeToString,
+                    request_deserializer=tts__service__pb2.TextRequest.FromString,
+                    response_serializer=tts__service__pb2.AudioResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -60,7 +60,7 @@ class TTS(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/TTS/GenerateSpeech',
-            massanger__pb2.TextRequest.SerializeToString,
-            massanger__pb2.AudioResponse.FromString,
+            tts__service__pb2.TextRequest.SerializeToString,
+            tts__service__pb2.AudioResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

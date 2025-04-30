@@ -2,7 +2,7 @@
 
 import streamlit as st
 import grpc
-from generated import massanger_pb2, massanger_pb2_grpc
+from generated import tts_service_pb2, tts_service_pb2_grpc
 import os
 # Allow switching between local and Docker gRPC addresses
 DEFAULT_GRPC_ADDRESS = "localhost:50051"
@@ -10,7 +10,7 @@ GRPC_ADDRESS = st.secrets.get("grpc_address", os.getenv("GRPC_ADDRESS", DEFAULT_
 
 # Setup gRPC connection
 channel = grpc.insecure_channel(GRPC_ADDRESS)
-stub = massanger_pb2_grpc.TTSStub(channel)
+stub = tts_service_pb2_grpc.TTSStub(channel)
 
 st.title("🗣️ Real-Time Text to Speech")
 
@@ -22,7 +22,7 @@ if st.button("Generate Speech"):
 		st.error("Text and description cannot be empty.")
 	else:
 		with st.spinner("Generating speech..."):
-			request = massanger_pb2.TextRequest(text=text, description=description)
+			request = tts_service_pb2.TextRequest(text=text, description=description)
 			try:
 				response = stub.GenerateSpeech(request)
 

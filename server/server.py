@@ -12,8 +12,8 @@ from model_loader import load_model
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'generated')))
-from generated import massanger_pb2
-from generated import massanger_pb2_grpc
+from generated import tts_service_pb2
+from generated import tts_service_pb2_grpc
 
 # Setup logging
 logging.basicConfig(filename="server_errors.log", level=logging.ERROR, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -27,7 +27,7 @@ model.eval()
 # Async lock for model inference
 model_lock = asyncio.Lock()
 
-class TTSServicer(massanger_pb2_grpc.TTSServicer):
+class TTSServicer(tts_service_pb2_grpc.TTSServicer):
 
     async def GenerateSpeech(self, request, context):
         try:
@@ -35,7 +35,7 @@ class TTSServicer(massanger_pb2_grpc.TTSServicer):
             if not request.text.strip() or not request.description.strip():
                 context.set_code(grpc.StatusCode.INVALID_ARGUMENT)
                 context.set_details("Text or description cannot be empty.")
-                return massanger_pb2.AudioResponse()
+                return tts_service_pb2.AudioResponse()
 
             # Tokenize inputs
             desc_inputs = description_tokenizer(request.description, return_tensors="pt").to(device)
@@ -61,18 +61,18 @@ class TTSServicer(massanger_pb2_grpc.TTSServicer):
             sf.write(buf, audio, model.config.sampling_rate, format="WAV")
             buf.seek(0)
 
-            return massanger_pb2.AudioResponse(audio=buf.read())
+            return tts_service_pb2.AudioResponse(audio=buf.read())
 
         except Exception as e:
             log_msg = f"Error in GenerateSpeech: {e}"
             logging.error(log_msg)
             context.set_code(grpc.StatusCode.INTERNAL)
             context.set_details(str(e))
-            return massanger_pb2.AudioResponse()
+            return tts_service_pb2.AudioResponse()
 
 async def serve():
     server = aio.server()
-    massanger_pb2_grpc.add_TTSServicer_to_server(TTSServicer(), server)
+    tts_service_pb2_grpc.add_TTSServicer_to_server(TTSServicer(), server)
     server.add_insecure_port('[::]:50051')
     await server.start()
     print("Async TTS Server started on port 50051...")
