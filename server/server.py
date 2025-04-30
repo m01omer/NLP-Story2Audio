@@ -8,10 +8,12 @@ import torch
 import asyncio
 import logging
 from model_loader import load_model
-
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'generated')))
+
+# Automatically add the parent directory to PYTHONPATH
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'generated')))
 from generated import tts_service_pb2
 from generated import tts_service_pb2_grpc
 
