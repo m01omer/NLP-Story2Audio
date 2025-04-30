@@ -2,7 +2,8 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import tts_service_pb2 as tts__service__pb2
+from . import tts_service_pb2 as tts__service__pb2
+
 
 
 class TTSStub(object):
