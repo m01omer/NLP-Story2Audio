@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  tts-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    environment:
+      - RUNNING_IN_DOCKER=true
+    volumes:
+      - ./models:/app/models  # Mount model directory if needed
+    ports:
+      - "50051:50051"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1  # Use all available GPUs
+              capabilities: [gpu]  # Use NVIDIA GPU
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; s=socket.socket(); s.connect(('localhost', 50051)); s.close()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  tts-ui:
+    build: 
+      context: .
+      dockerfile: Dockerfile.ui
+    environment:
+      - RUNNING_IN_DOCKER=true
+      - TTS_SERVER_HOST=tts-server  # Point to server service name
+      - TTS_SERVER_PORT=50051
+    ports:
+      - "8501:8501"  # Streamlit default port
+    depends_on:
+      - tts-server
+    restart: unless-stopped
+
+  # Add load testing service for easy testing
+  load-tester:
+    build:
+      context: .
+      dockerfile: Dockerfile.tester
+    environment:
+      - RUNNING_IN_DOCKER=true
+    volumes:
+      - ./load_test_results:/app/results
+    depends_on:
+      - tts-server
+    # The service won't start automatically - you'll run it manually
+    profiles:
+      - testing
