@@ -1,3 +1,4 @@
+#version: '3.9'
 
 services:
   server:
@@ -10,6 +11,7 @@ services:
       - nlpnet
     expose:
       - "50051"
+    restart: unless-stopped
 
   ui:
     build:
@@ -23,6 +25,10 @@ services:
       - server
     networks:
       - nlpnet
+    environment:
+      - GRPC_ADDRESS=grpc_server:50051
+    restart: unless-stopped
 
 networks:
   nlpnet:
+    driver: bridge
