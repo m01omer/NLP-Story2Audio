@@ -1,0 +1,232 @@
+2025-05-01 15:57:25,990 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-01 15:57:26,074 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-01 15:57:26,077 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-01 15:59:45,395 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-01 15:59:45,426 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-01 15:59:45,428 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
