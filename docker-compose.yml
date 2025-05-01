@@ -5,8 +5,8 @@ services:
     build:
       context: .
       dockerfile: server/dockerfile
-    image: project-server:latest
-    container_name: grpc_server
+    image: project-server:Shark
+    container_name: Shark_server
     networks:
       - nlpnet
     expose:
@@ -17,8 +17,8 @@ services:
     build:
       context: .
       dockerfile: DOCKERFILE
-    image: project-ui:latest
-    container_name: streamlit_ui
+    image: project-ui:Shark
+    container_name: client
     ports:
       - "8501:8501"
     depends_on:
