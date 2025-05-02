@@ -1,20 +1,31 @@
 # model_loader.py
 import torch
-from parler_tts import ParlerTTSForConditionalGeneration
-from transformers import AutoTokenizer
+from transformers import SpeechT5ForTextToSpeech, SpeechT5Tokenizer, SpeechT5Processor, SpeechT5HifiGan
 
-def load_model():
+def load_model(model_name="microsoft/speecht5_tts"):
+    """
+    Load the SpeechT5 model and related components.
+    
+    Args:
+        model_name (str): Name of the model to load
+        
+    Returns:
+        tuple: (model, tokenizer, processor, vocoder, device)
+    """
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    MODEL_NAME = "parler-tts/parler_tts_mini_v0.1"
-    model = ParlerTTSForConditionalGeneration.from_pretrained(MODEL_NAME).to(device)
-    prompt_tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-    description_tokenizer = AutoTokenizer.from_pretrained(model.config.text_encoder._name_or_path)
-    return model, prompt_tokenizer, description_tokenizer
-
-def load_urdu_model():
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    MODEL_NAME = "facebook/mms-tts-urd-script_arabic"
-    model = ParlerTTSForConditionalGeneration.from_pretrained(MODEL_NAME).to(device)
-    prompt_tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-    description_tokenizer = AutoTokenizer.from_pretrained(model.config.text_encoder._name_or_path)
-    return model, prompt_tokenizer, description_tokenizer
+    
+    # Load all components with explicit float32 dtype to avoid BFloat16 issues
+    tts_model = SpeechT5ForTextToSpeech.from_pretrained(
+        model_name, 
+        torch_dtype=torch.float32
+    ).to(device)
+    
+    tokenizer = SpeechT5Tokenizer.from_pretrained(model_name)
+    processor = SpeechT5Processor.from_pretrained(model_name)
+    
+    vocoder = SpeechT5HifiGan.from_pretrained(
+        "microsoft/speecht5_hifigan", 
+        torch_dtype=torch.float32
+    ).to(device)
+    
+    return tts_model, tokenizer, processor, vocoder, device

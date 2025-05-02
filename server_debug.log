@@ -2311,3 +2311,3696 @@
 2025-05-01 23:46:23,646 - WARNING - `prompt_attention_mask` is specified but `attention_mask` is not. A full `attention_mask` will be created. Make sure this is the intended behaviour.
 2025-05-01 23:47:03,390 - INFO - Model inference completed in 40.798s
 2025-05-01 23:47:03,448 - INFO - Successfully generated audio of size: 239660 bytes in 40.945s
+2025-05-01 23:54:18,427 - INFO - Received request with text: 'mera naam azeem hai...'
+2025-05-01 23:54:18,453 - INFO - Language detection completed in 0.002s: detected as default
+2025-05-01 23:54:18,455 - INFO - Applied default text preprocessing
+2025-05-01 23:54:18,456 - INFO - Preprocessing completed in 0.003s
+2025-05-01 23:54:18,588 - INFO - Tokenization completed in 0.130s
+2025-05-01 23:54:18,589 - INFO - Generating audio using default model...
+2025-05-01 23:55:06,382 - INFO - Model inference completed in 47.779s
+2025-05-01 23:55:06,464 - INFO - Successfully generated audio of size: 177196 bytes in 48.056s
+2025-05-02 00:23:08,568 - INFO - ModelManager initialized with device: cpu
+2025-05-02 00:23:08,570 - INFO - Loading default TTS model...
+2025-05-02 00:24:08,790 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 00:24:08,833 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 00:24:08,838 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 00:24:11,638 - INFO - Default model loaded successfully
+2025-05-02 00:25:44,327 - INFO - Received request with text: 'mera naam azeem hai ...'
+2025-05-02 00:25:44,385 - INFO - Language detection completed in 0.031s: detected as default
+2025-05-02 00:25:44,392 - INFO - Applied default text preprocessing
+2025-05-02 00:25:44,392 - INFO - Preprocessing completed in 0.006s
+2025-05-02 00:25:44,580 - INFO - Tokenization completed in 0.185s
+2025-05-02 00:25:44,581 - INFO - Generating audio using default model...
+2025-05-02 00:25:44,596 - ERROR - Error in GenerateSpeech after 0.276s: autocast.__init__() missing 1 required positional argument: 'device_type'
+2025-05-02 00:27:21,015 - INFO - ModelManager initialized with device: cpu
+2025-05-02 00:27:21,015 - INFO - Loading default TTS model...
+2025-05-02 00:28:27,193 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 00:28:27,254 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 00:28:27,259 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 00:28:32,441 - INFO - Default model loaded successfully
+2025-05-02 00:29:37,304 - INFO - Received request with text: 'Main aj school nahi ...'
+2025-05-02 00:29:37,317 - INFO - Language detection completed in 0.013s: detected as roman_urdu
+2025-05-02 00:29:37,745 - ERROR - Error in GenerateSpeech after 0.442s: nothing to repeat at position 2
+2025-05-02 00:29:38,940 - INFO - Received request with text: 'Main aj school nahi ...'
+2025-05-02 00:29:38,940 - INFO - Language detection completed in 0.000s: detected as roman_urdu
+2025-05-02 00:29:38,943 - ERROR - Error in GenerateSpeech after 0.004s: nothing to repeat at position 2
+2025-05-02 00:29:44,531 - INFO - Received request with text: 'Main aj school nahi ...'
+2025-05-02 00:29:44,532 - INFO - Language detection completed in 0.000s: detected as roman_urdu
+2025-05-02 00:29:44,537 - ERROR - Error in GenerateSpeech after 0.006s: nothing to repeat at position 2
+2025-05-02 00:31:24,363 - INFO - Received request with text: 'Main aj school nahi ...'
+2025-05-02 00:31:24,371 - INFO - Language detection completed in 0.000s: detected as roman_urdu
+2025-05-02 00:31:24,633 - ERROR - Error in GenerateSpeech after 0.273s: nothing to repeat at position 2
+2025-05-02 00:32:17,608 - INFO - ModelManager initialized with device: cpu
+2025-05-02 00:32:17,608 - INFO - Loading default TTS model...
+2025-05-02 00:32:33,061 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 00:32:33,235 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 00:32:33,297 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 00:33:03,416 - INFO - Default model loaded successfully
+2025-05-02 00:33:15,193 - INFO - Received request with text: 'Main aj school nahi ...'
+2025-05-02 00:33:15,208 - INFO - Language detection completed in 0.015s: detected as roman_urdu
+2025-05-02 00:33:15,350 - ERROR - Error in GenerateSpeech after 0.157s: nothing to repeat at position 2
+2025-05-02 00:35:29,907 - INFO - ModelManager initialized with device: cpu
+2025-05-02 00:35:29,907 - INFO - Loading default TTS model...
+2025-05-02 00:36:18,477 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 00:36:18,519 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 00:36:18,522 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 00:36:21,401 - INFO - Default model loaded successfully
+2025-05-02 00:36:56,882 - INFO - Received request with text: 'Main aj school nahi ...'
+2025-05-02 00:36:56,913 - INFO - Language detection completed in 0.018s: detected as roman_urdu
+2025-05-02 00:36:57,029 - ERROR - Error in GenerateSpeech after 0.150s: nothing to repeat at position 2
+2025-05-02 04:50:47,133 - INFO - ModelManager initialized with device: cpu
+2025-05-02 04:50:47,133 - INFO - Loading default TTS model...
+2025-05-02 04:51:05,550 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 04:51:05,571 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 04:51:05,573 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 04:51:08,930 - INFO - Default model loaded successfully
+2025-05-02 04:52:03,535 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 04:52:03,551 - INFO - Language detection completed in 0.004s: detected as default
+2025-05-02 04:52:03,567 - INFO - Applied default text preprocessing
+2025-05-02 04:52:03,567 - INFO - Preprocessing completed in 0.016s
+2025-05-02 04:52:03,738 - INFO - Tokenization completed in 0.169s
+2025-05-02 04:52:03,739 - INFO - Generating audio using default model...
+2025-05-02 04:52:04,959 - WARNING - `prompt_attention_mask` is specified but `attention_mask` is not. A full `attention_mask` will be created. Make sure this is the intended behaviour.
+2025-05-02 04:53:08,222 - INFO - Model inference completed in 64.477s
+2025-05-02 04:53:08,282 - INFO - Successfully generated audio of size: 308268 bytes in 64.753s
+2025-05-02 04:53:08,316 - INFO - Received request with text: 'Main aj school nahi ...'
+2025-05-02 04:53:08,317 - INFO - Language detection completed in 0.001s: detected as default
+2025-05-02 04:53:08,318 - INFO - Applied default text preprocessing
+2025-05-02 04:53:08,318 - INFO - Preprocessing completed in 0.001s
+2025-05-02 04:53:08,379 - INFO - Tokenization completed in 0.060s
+2025-05-02 04:53:08,379 - INFO - Generating audio using default model...
+2025-05-02 04:53:50,872 - INFO - Model inference completed in 42.489s
+2025-05-02 04:53:50,898 - INFO - Successfully generated audio of size: 202796 bytes in 42.582s
+2025-05-02 04:54:10,200 - INFO - Received request with text: 'Main aj school nahi ...'
+2025-05-02 04:54:10,201 - INFO - Language detection completed in 0.000s: detected as default
+2025-05-02 04:54:10,202 - INFO - Applied default text preprocessing
+2025-05-02 04:54:10,202 - INFO - Preprocessing completed in 0.001s
+2025-05-02 04:54:10,273 - INFO - Tokenization completed in 0.069s
+2025-05-02 04:54:10,273 - INFO - Generating audio using default model...
+2025-05-02 04:55:08,099 - INFO - ModelManager initialized with device: cpu
+2025-05-02 04:55:08,100 - INFO - Loading default TTS model...
+2025-05-02 04:55:18,405 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 04:55:18,445 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 04:55:18,450 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 04:55:21,069 - INFO - Default model loaded successfully
+2025-05-02 04:55:46,858 - INFO - Received request with text: 'mein nahi ja raha sc...'
+2025-05-02 04:55:46,877 - INFO - Language detection completed in 0.012s: detected as roman_urdu
+2025-05-02 04:55:47,120 - ERROR - Error in GenerateSpeech after 0.263s: nothing to repeat at position 2
+2025-05-02 05:02:47,280 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:02:47,281 - INFO - Loading default TTS model...
+2025-05-02 05:02:59,969 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:02:59,983 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:02:59,984 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:03:02,867 - INFO - Default model loaded successfully
+2025-05-02 05:04:11,810 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 05:04:11,847 - INFO - Language detection completed in 0.024s: detected as default
+2025-05-02 05:04:11,854 - INFO - Applied default text preprocessing
+2025-05-02 05:04:11,854 - INFO - Preprocessing completed in 0.007s
+2025-05-02 05:04:12,009 - INFO - Tokenization completed in 0.153s
+2025-05-02 05:04:12,009 - INFO - Generating audio using default model...
+2025-05-02 05:04:13,126 - WARNING - `prompt_attention_mask` is specified but `attention_mask` is not. A full `attention_mask` will be created. Make sure this is the intended behaviour.
+2025-05-02 05:05:06,342 - INFO - Model inference completed in 54.329s
+2025-05-02 05:05:06,386 - INFO - Successfully generated audio of size: 334892 bytes in 54.582s
+2025-05-02 05:05:20,598 - INFO - Received request with text: 'mein aaj school nahi...'
+2025-05-02 05:05:20,604 - INFO - Language detection completed in 0.004s: detected as roman_urdu
+2025-05-02 05:05:20,756 - ERROR - Error in GenerateSpeech after 0.157s: nothing to repeat at position 2
+2025-05-02 05:11:07,135 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:11:07,135 - INFO - Loading default TTS model...
+2025-05-02 05:11:25,853 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:11:25,872 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:11:25,875 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:11:28,940 - INFO - Default model loaded successfully
+2025-05-02 05:11:52,280 - INFO - Received request with text: 'mein  school nahi ja...'
+2025-05-02 05:11:52,298 - INFO - Language detection completed in 0.010s: detected as roman_urdu
+2025-05-02 05:11:52,356 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:11:52,362 - ERROR - Error in GenerateSpeech after 0.084s: nothing to repeat at position 2
+2025-05-02 05:14:05,051 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:14:05,051 - INFO - Loading default TTS model...
+2025-05-02 05:14:20,177 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:14:20,195 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:14:20,197 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:14:23,936 - INFO - Default model loaded successfully
+2025-05-02 05:15:41,118 - INFO - Received request with text: 'mein school nahi ja ...'
+2025-05-02 05:15:41,169 - INFO - Language detection completed in 0.022s: detected as roman_urdu
+2025-05-02 05:15:41,331 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:15:41,455 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:15:41,455 - INFO - Preprocessing completed in 0.286s
+2025-05-02 05:15:41,459 - ERROR - Error in GenerateSpeech after 0.343s: 'ModelManager' object has no attribute '_load_urdu_model'
+2025-05-02 05:17:02,834 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:17:02,834 - INFO - Loading default TTS model...
+2025-05-02 05:17:10,817 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:17:10,828 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:17:10,829 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:17:12,950 - INFO - Default model loaded successfully
+2025-05-02 05:18:02,937 - INFO - Received request with text: 'mein school nahi ja ...'
+2025-05-02 05:18:02,958 - INFO - Language detection completed in 0.011s: detected as roman_urdu
+2025-05-02 05:18:03,026 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:18:03,070 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:18:03,071 - INFO - Preprocessing completed in 0.113s
+2025-05-02 05:18:03,071 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 05:18:04,355 - ERROR - Error in GenerateSpeech after 1.420s: property 'sampling_rate' of 'ParlerTTSConfig' object has no setter
+2025-05-02 05:18:33,810 - INFO - Received request with text: 'mein school nahi ja ...'
+2025-05-02 05:18:33,810 - INFO - Language detection completed in 0.000s: detected as roman_urdu
+2025-05-02 05:18:33,813 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:18:33,818 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:18:33,818 - INFO - Preprocessing completed in 0.008s
+2025-05-02 05:18:33,818 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 05:18:34,381 - ERROR - Error in GenerateSpeech after 0.572s: property 'sampling_rate' of 'ParlerTTSConfig' object has no setter
+2025-05-02 05:25:33,367 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:27:22,232 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:27:36,284 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:27:36,284 - INFO - Loading default TTS model...
+2025-05-02 05:28:51,363 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:28:51,363 - INFO - Loading default TTS model...
+2025-05-02 05:29:04,658 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:29:04,658 - INFO - Loading default TTS model...
+2025-05-02 05:30:12,187 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:30:12,187 - INFO - Loading default TTS model...
+2025-05-02 05:30:56,258 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:30:56,259 - INFO - Loading default TTS model...
+2025-05-02 05:31:45,676 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:31:45,676 - INFO - Loading default TTS model...
+2025-05-02 05:32:38,396 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:32:38,397 - INFO - Loading default TTS model...
+2025-05-02 05:32:48,321 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:32:48,362 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:32:48,368 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:32:51,024 - INFO - Default model loaded successfully
+2025-05-02 05:33:13,428 - INFO - Received request with text: 'mein school nahi ja ...'
+2025-05-02 05:33:13,464 - INFO - Language detection completed in 0.034s: detected as roman_urdu
+2025-05-02 05:33:13,617 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:33:13,734 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:33:13,734 - INFO - Preprocessing completed in 0.269s
+2025-05-02 05:33:13,734 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 05:33:14,328 - ERROR - Error in GenerateSpeech after 0.904s: property 'sampling_rate' of 'ParlerTTSConfig' object has no setter
+2025-05-02 05:35:14,736 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:35:14,737 - INFO - Loading default TTS model...
+2025-05-02 05:35:22,883 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:35:22,894 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:35:22,895 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:35:25,403 - INFO - Default model loaded successfully
+2025-05-02 05:35:35,885 - INFO - Received request with text: 'mein school nahi ja ...'
+2025-05-02 05:35:35,934 - INFO - Language detection completed in 0.040s: detected as roman_urdu
+2025-05-02 05:35:36,135 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:35:36,173 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:35:36,173 - INFO - Preprocessing completed in 0.239s
+2025-05-02 05:35:36,174 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 05:35:36,749 - ERROR - Error in GenerateSpeech after 0.868s: property 'sampling_rate' of 'ParlerTTSConfig' object has no setter
+2025-05-02 05:38:23,124 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:38:23,124 - INFO - Loading default TTS model...
+2025-05-02 05:38:34,902 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:38:34,917 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:38:34,919 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:38:37,766 - INFO - Default model loaded successfully
+2025-05-02 05:39:37,658 - INFO - Received request with text: 'mein school nahi ja ...'
+2025-05-02 05:39:37,672 - INFO - Language detection completed in 0.007s: detected as roman_urdu
+2025-05-02 05:39:37,741 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:39:37,774 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:39:37,774 - INFO - Preprocessing completed in 0.101s
+2025-05-02 05:39:37,775 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 05:39:38,721 - ERROR - Error in GenerateSpeech after 1.065s: property 'sampling_rate' of 'ParlerTTSConfig' object has no setter
+2025-05-02 05:47:45,548 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:47:45,548 - INFO - Loading default TTS model...
+2025-05-02 05:47:55,528 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:47:55,542 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:47:55,543 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:47:58,034 - INFO - Default model loaded successfully
+2025-05-02 05:48:34,828 - INFO - Received request with text: 'mein school nahi ja ...'
+2025-05-02 05:48:34,850 - INFO - Language detection completed in 0.012s: detected as roman_urdu
+2025-05-02 05:48:34,938 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:48:34,981 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:48:34,982 - INFO - Preprocessing completed in 0.132s
+2025-05-02 05:48:34,982 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 05:48:35,893 - ERROR - Error in GenerateSpeech after 1.067s: property 'sampling_rate' of 'ParlerTTSConfig' object has no setter
+2025-05-02 05:50:08,322 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:50:08,322 - INFO - Loading default TTS model...
+2025-05-02 05:50:16,431 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:50:16,443 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:50:16,445 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:50:19,763 - INFO - Default model loaded successfully
+2025-05-02 05:51:14,303 - INFO - Received request with text: 'mein school nahi ja ...'
+2025-05-02 05:51:14,325 - INFO - Language detection completed in 0.011s: detected as roman_urdu
+2025-05-02 05:51:14,379 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:51:14,413 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:51:14,413 - INFO - Preprocessing completed in 0.087s
+2025-05-02 05:51:14,413 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 05:51:14,414 - ERROR - Error in GenerateSpeech after 0.112s: name 'AutoConfig' is not defined
+2025-05-02 05:51:48,121 - INFO - Received request with text: 'mein school nahi ja ...'
+2025-05-02 05:51:48,122 - INFO - Language detection completed in 0.000s: detected as roman_urdu
+2025-05-02 05:51:48,126 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:51:48,129 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:51:48,129 - INFO - Preprocessing completed in 0.007s
+2025-05-02 05:51:48,130 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 05:51:48,130 - ERROR - Error in GenerateSpeech after 0.009s: name 'AutoConfig' is not defined
+2025-05-02 05:52:08,350 - INFO - ModelManager initialized with device: cpu
+2025-05-02 05:52:08,350 - INFO - Loading default TTS model...
+2025-05-02 05:52:16,333 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 05:52:16,345 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 05:52:16,346 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 05:52:20,108 - INFO - Default model loaded successfully
+2025-05-02 05:53:04,778 - INFO - Received request with text: 'mein sohnay ja raha...'
+2025-05-02 05:53:04,796 - INFO - Language detection completed in 0.008s: detected as roman_urdu
+2025-05-02 05:53:04,847 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 05:53:04,881 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 05:53:04,881 - INFO - Preprocessing completed in 0.084s
+2025-05-02 05:53:04,882 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 05:53:51,226 - ERROR - Error in GenerateSpeech after 46.448s: Config: VitsConfig {
+  "_attn_implementation_autoset": true,
+  "_name_or_path": "facebook/mms-tts-urd-script_arabic",
+  "activation_dropout": 0.1,
+  "architectures": [
+    "VitsModel"
+  ],
+  "attention_dropout": 0.1,
+  "depth_separable_channels": 2,
+  "depth_separable_num_layers": 3,
+  "duration_predictor_dropout": 0.5,
+  "duration_predictor_filter_channels": 256,
+  "duration_predictor_flow_bins": 10,
+  "duration_predictor_kernel_size": 3,
+  "duration_predictor_num_flows": 4,
+  "duration_predictor_tail_bound": 5.0,
+  "ffn_dim": 768,
+  "ffn_kernel_size": 3,
+  "flow_size": 192,
+  "hidden_act": "relu",
+  "hidden_dropout": 0.1,
+  "hidden_size": 192,
+  "initializer_range": 0.02,
+  "layer_norm_eps": 1e-05,
+  "layerdrop": 0.1,
+  "leaky_relu_slope": 0.1,
+  "model_type": "vits",
+  "noise_scale": 0.667,
+  "noise_scale_duration": 0.8,
+  "num_attention_heads": 2,
+  "num_hidden_layers": 6,
+  "num_speakers": 1,
+  "posterior_encoder_num_wavenet_layers": 16,
+  "prior_encoder_num_flows": 4,
+  "prior_encoder_num_wavenet_layers": 4,
+  "resblock_dilation_sizes": [
+    [
+      1,
+      3,
+      5
+    ],
+    [
+      1,
+      3,
+      5
+    ],
+    [
+      1,
+      3,
+      5
+    ]
+  ],
+  "resblock_kernel_sizes": [
+    3,
+    7,
+    11
+  ],
+  "sampling_rate": 16000,
+  "speaker_embedding_size": 0,
+  "speaking_rate": 1.0,
+  "spectrogram_bins": 513,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "upsample_initial_channel": 512,
+  "upsample_kernel_sizes": [
+    16,
+    16,
+    4,
+    4
+  ],
+  "upsample_rates": [
+    8,
+    8,
+    2,
+    2
+  ],
+  "use_bias": true,
+  "use_stochastic_duration_prediction": true,
+  "vocab_size": 58,
+  "wavenet_dilation_rate": 1,
+  "wavenet_dropout": 0.0,
+  "wavenet_kernel_size": 5,
+  "window_size": 4
+}
+ has to be of type <class 'parler_tts.configuration_parler_tts.ParlerTTSConfig'>
+2025-05-02 14:42:48,629 - INFO - ModelManager initialized with device: cpu
+2025-05-02 14:42:48,630 - INFO - Loading default TTS model...
+2025-05-02 14:42:57,871 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 14:42:57,882 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 14:42:57,884 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 14:42:59,843 - INFO - Default model loaded successfully
+2025-05-02 14:43:33,776 - INFO - Received request with text: 'mein sohany ja raha ...'
+2025-05-02 14:43:33,820 - INFO - Language detection completed in 0.020s: detected as roman_urdu
+2025-05-02 14:43:33,929 - INFO - Transliterating Roman Urdu to Urdu script...
+2025-05-02 14:43:33,976 - INFO - Applied Roman Urdu text preprocessing
+2025-05-02 14:43:33,976 - INFO - Preprocessing completed in 0.155s
+2025-05-02 14:43:33,977 - INFO - Loading Roman Urdu TTS model...
+2025-05-02 14:43:36,487 - ERROR - Error in GenerateSpeech after 2.718s: [Errno 2] No such file or directory: 'facebook/mms-tts-urd-script_arabic/pytorch_model.bin'
+2025-05-02 14:48:44,962 - INFO - ModelManager initialized with device: cpu
+2025-05-02 14:48:44,963 - INFO - Loading default TTS model...
+2025-05-02 18:16:14,780 - INFO - ModelManager initialized with device: cpu
+2025-05-02 18:16:14,781 - INFO - Loading default TTS model...
+2025-05-02 18:17:20,557 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 18:17:20,652 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 18:17:20,672 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 18:17:47,948 - INFO - Default model loaded successfully
+2025-05-02 18:18:47,652 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 18:18:47,655 - INFO - Language detection completed in 0.002s: detected as default
+2025-05-02 18:18:47,663 - INFO - Applied default text preprocessing
+2025-05-02 18:18:47,664 - INFO - Preprocessing completed in 0.009s
+2025-05-02 18:18:47,735 - INFO - Tokenization completed in 0.069s
+2025-05-02 18:18:47,735 - INFO - Generating audio using default model...
+2025-05-02 18:18:48,749 - WARNING - `prompt_attention_mask` is specified but `attention_mask` is not. A full `attention_mask` will be created. Make sure this is the intended behaviour.
+2025-05-02 18:19:51,564 - INFO - Model inference completed in 63.822s
+2025-05-02 18:19:51,616 - INFO - Successfully generated audio of size: 263212 bytes in 63.966s
+2025-05-02 18:27:02,580 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 18:27:02,589 - INFO - Language detection completed in 0.001s: detected as default
+2025-05-02 18:27:02,594 - INFO - Applied default text preprocessing
+2025-05-02 18:27:02,594 - INFO - Preprocessing completed in 0.004s
+2025-05-02 18:27:02,709 - INFO - Tokenization completed in 0.115s
+2025-05-02 18:27:02,711 - INFO - Generating audio using default model...
+2025-05-02 18:27:42,604 - INFO - Model inference completed in 39.889s
+2025-05-02 18:27:42,631 - INFO - Successfully generated audio of size: 178220 bytes in 40.053s
+2025-05-02 18:27:42,632 - INFO - Preprocessor cache stats: {'cache_size': 2, 'max_size': 1000, 'hits': 0, 'misses': 2, 'hit_rate': '0.00%'}
+2025-05-02 18:27:42,633 - INFO - Language detector cache stats: {'cache_size': 2, 'max_size': 500, 'hits': 0, 'misses': 2, 'hit_rate': '0.00%'}
+2025-05-02 18:44:19,004 - INFO - ModelManager initialized with device: cpu
+2025-05-02 18:44:19,004 - INFO - Loading default TTS model...
+2025-05-02 18:45:13,915 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 18:45:13,964 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 18:45:13,968 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 18:45:19,288 - INFO - Default model loaded successfully
+2025-05-02 18:46:03,035 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 18:46:03,042 - INFO - Applied default text preprocessing
+2025-05-02 18:46:03,042 - INFO - Preprocessing completed in 0.005s
+2025-05-02 18:46:03,043 - ERROR - Error in GenerateSpeech after 0.007s: name 'language' is not defined
+2025-05-02 18:46:08,662 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 18:46:08,663 - INFO - Applied default text preprocessing
+2025-05-02 18:46:08,663 - INFO - Preprocessing completed in 0.000s
+2025-05-02 18:46:08,664 - ERROR - Error in GenerateSpeech after 0.002s: name 'language' is not defined
+2025-05-02 18:49:39,569 - INFO - ModelManager initialized with device: cpu
+2025-05-02 18:49:39,570 - INFO - Loading default TTS model...
+2025-05-02 18:50:28,498 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 18:50:28,566 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 18:50:28,581 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 18:50:31,600 - INFO - Default model loaded successfully
+2025-05-02 19:11:59,756 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 19:11:59,819 - INFO - Applied default text preprocessing
+2025-05-02 19:11:59,821 - INFO - Preprocessing completed in 0.040s
+2025-05-02 19:12:00,062 - INFO - Tokenization completed in 0.233s
+2025-05-02 19:12:01,449 - WARNING - `prompt_attention_mask` is specified but `attention_mask` is not. A full `attention_mask` will be created. Make sure this is the intended behaviour.
+2025-05-02 19:13:08,603 - INFO - Model inference completed in 68.532s
+2025-05-02 19:13:08,684 - INFO - Successfully generated audio of size: 282668 bytes in 68.937s
+2025-05-02 19:40:11,578 - INFO - ModelManager initialized with device: cuda
+2025-05-02 19:40:11,579 - INFO - CUDA Memory: 0.00MB allocated, 0.00MB reserved
+2025-05-02 19:40:11,894 - INFO - Set CUDA memory fraction to 0.8
+2025-05-02 19:40:11,894 - INFO - Loading default TTS model...
+2025-05-02 19:41:47,792 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 19:41:47,828 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 19:41:47,835 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 19:51:09,485 - INFO - ModelManager initialized with device: cuda
+2025-05-02 19:51:09,485 - INFO - CUDA Memory: 0.00MB allocated, 0.00MB reserved
+2025-05-02 19:51:09,818 - INFO - Set CUDA memory fraction to 0.8
+2025-05-02 19:51:09,818 - INFO - Loading default TTS model in half precision...
+2025-05-02 19:51:09,819 - INFO - CUDA Memory before loading: 0.00MB allocated
+2025-05-02 19:51:53,109 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 19:51:53,140 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 19:51:53,144 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 19:52:02,589 - WARNING - Failed to load model in half precision: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 0 has a total capacity of 4.00 GiB of which 1.63 GiB is free. 3.20 GiB allowed; Of the allocated memory 1.55 GiB is allocated by PyTorch, and 38.92 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-05-02 19:52:02,603 - INFO - Falling back to CPU
+2025-05-02 19:53:01,108 - INFO - ModelManager initialized with device: cuda
+2025-05-02 19:53:01,109 - INFO - CUDA Memory: 0.00MB allocated, 0.00MB reserved
+2025-05-02 19:53:01,493 - INFO - Set CUDA memory fraction to 0.8
+2025-05-02 19:53:01,493 - INFO - Loading default TTS model...
+2025-05-02 19:53:01,493 - INFO - CUDA Memory before loading: 0.00MB allocated
+2025-05-02 19:53:56,508 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 19:53:56,541 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 19:53:56,546 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 20:11:40,336 - INFO - ModelManager initialized with device: cuda
+2025-05-02 20:11:40,337 - INFO - CUDA Memory: 0.00MB allocated, 0.00MB reserved
+2025-05-02 20:11:40,769 - INFO - Set CUDA memory fraction to 0.8
+2025-05-02 20:11:40,769 - INFO - Loading default TTS model...
+2025-05-02 20:11:40,769 - INFO - CUDA Memory before loading: 0.00MB allocated
+2025-05-02 20:12:27,273 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 20:12:27,299 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 20:12:27,302 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 20:12:45,419 - INFO - Successfully moved text_encoder to cuda
+2025-05-02 20:12:45,422 - INFO - Successfully moved audio_encoder to cuda
+2025-05-02 20:12:45,424 - INFO - Successfully moved decoder to cuda
+2025-05-02 20:12:45,424 - INFO - Successfully moved enc_to_dec_proj to cuda
+2025-05-02 20:12:45,424 - INFO - Successfully moved embed_prompts to cuda
+2025-05-02 20:12:45,425 - INFO - Default model loaded successfully on cuda
+2025-05-02 20:13:34,667 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 20:13:34,692 - INFO - Applied default text preprocessing
+2025-05-02 20:13:34,692 - INFO - Preprocessing completed in 0.009s
+2025-05-02 20:13:34,829 - INFO - Tokenization completed in 0.135s
+2025-05-02 20:13:36,834 - WARNING - `prompt_attention_mask` is specified but `attention_mask` is not. A full `attention_mask` will be created. Make sure this is the intended behaviour.
+2025-05-02 20:15:49,204 - INFO - Model inference completed in 134.373s
+2025-05-02 20:15:49,241 - ERROR - Error in GenerateSpeech after 134.574s: dtype must be one of ['float32', 'float64', 'int16', 'int32'] and not 'float16'
+2025-05-02 20:16:59,063 - INFO - ModelManager initialized with device: cuda
+2025-05-02 20:16:59,064 - INFO - CUDA Memory: 0.00MB allocated, 0.00MB reserved
+2025-05-02 20:16:59,397 - INFO - Set CUDA memory fraction to 0.8
+2025-05-02 20:16:59,397 - INFO - Loading default TTS model...
+2025-05-02 20:16:59,398 - INFO - CUDA Memory before loading: 0.00MB allocated
+2025-05-02 20:17:41,407 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 20:17:41,432 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 20:17:41,436 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 20:20:33,053 - INFO - ModelManager initialized with device: cpu
+2025-05-02 20:20:33,053 - INFO - Loading default TTS model...
+2025-05-02 20:21:24,379 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 20:21:24,412 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 20:21:24,416 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 20:21:28,147 - INFO - Default model loaded successfully on cpu
+2025-05-02 20:23:37,537 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 20:23:37,554 - INFO - Applied default text preprocessing
+2025-05-02 20:23:37,554 - INFO - Preprocessing completed in 0.009s
+2025-05-02 20:23:37,632 - INFO - Tokenization completed in 0.076s
+2025-05-02 20:23:38,678 - WARNING - `prompt_attention_mask` is specified but `attention_mask` is not. A full `attention_mask` will be created. Make sure this is the intended behaviour.
+2025-05-02 20:30:33,107 - INFO - ModelManager initialized with device: cpu
+2025-05-02 20:30:33,107 - INFO - Loading default TTS model...
+2025-05-02 20:31:29,104 - WARNING - Config of the text_encoder: <class 'transformers.models.t5.modeling_t5.T5EncoderModel'> is overwritten by shared text_encoder config: T5Config {
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+2025-05-02 20:31:29,138 - WARNING - Config of the audio_encoder: <class 'parler_tts.dac_wrapper.modeling_dac.DACModel'> is overwritten by shared audio_encoder config: DACConfig {
+  "_name_or_path": "ylacombe/dac_44khZ_8kbps",
+  "architectures": [
+    "DACModel"
+  ],
+  "codebook_size": 1024,
+  "frame_rate": 86,
+  "latent_dim": 1024,
+  "model_bitrate": 8,
+  "model_type": "dac_on_the_hub",
+  "num_codebooks": 9,
+  "sampling_rate": 44100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1"
+}
+
+2025-05-02 20:31:29,144 - WARNING - Config of the decoder: <class 'parler_tts.modeling_parler_tts.ParlerTTSForCausalLM'> is overwritten by shared decoder config: ParlerTTSDecoderConfig {
+  "_name_or_path": "/fsx/yoach/tmp/artefacts/decoder_400M/",
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "add_cross_attention": true,
+  "architectures": [
+    "ParlerTTSForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1025,
+  "codebook_weights": null,
+  "cross_attention_implementation_strategy": null,
+  "dropout": 0.1,
+  "eos_token_id": 1024,
+  "ffn_dim": 4096,
+  "hidden_size": 1024,
+  "initializer_factor": 0.02,
+  "is_decoder": true,
+  "layerdrop": 0.0,
+  "max_position_embeddings": 4096,
+  "model_type": "parler_tts_decoder",
+  "num_attention_heads": 16,
+  "num_codebooks": 9,
+  "num_cross_attention_key_value_heads": 16,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 16,
+  "pad_token_id": 1024,
+  "rope_embeddings": false,
+  "rope_theta": 10000.0,
+  "scale_embedding": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "use_fused_lm_heads": false,
+  "vocab_size": 1088
+}
+
+2025-05-02 20:31:32,827 - INFO - Default model loaded successfully
+2025-05-02 20:32:02,379 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 20:32:02,385 - INFO - Applied default text preprocessing
+2025-05-02 20:32:02,386 - INFO - Preprocessing completed in 0.004s
+2025-05-02 20:32:02,437 - INFO - Tokenization completed in 0.052s
+2025-05-02 20:32:03,304 - WARNING - `prompt_attention_mask` is specified but `attention_mask` is not. A full `attention_mask` will be created. Make sure this is the intended behaviour.
+2025-05-02 20:33:15,452 - INFO - Model inference completed in 73.009s
+2025-05-02 20:33:15,504 - INFO - Successfully generated audio of size: 463916 bytes in 73.125s
+2025-05-02 20:33:15,537 - INFO - Received request with text: 'Life is what happens...'
+2025-05-02 20:33:15,538 - INFO - Applied default text preprocessing
+2025-05-02 20:33:15,539 - INFO - Preprocessing completed in 0.001s
+2025-05-02 20:33:15,639 - INFO - Tokenization completed in 0.099s
+2025-05-02 20:34:09,086 - INFO - Model inference completed in 53.441s
+2025-05-02 20:34:09,114 - INFO - Successfully generated audio of size: 345132 bytes in 53.577s
+2025-05-02 20:34:09,140 - INFO - Received request with text: 'This is a short test...'
+2025-05-02 20:34:09,141 - INFO - Applied default text preprocessing
+2025-05-02 20:34:09,141 - INFO - Preprocessing completed in 0.001s
+2025-05-02 20:34:09,203 - INFO - Tokenization completed in 0.062s
+2025-05-02 20:34:39,135 - INFO - Model inference completed in 29.919s
+2025-05-02 20:34:39,182 - INFO - Successfully generated audio of size: 135212 bytes in 30.041s
+2025-05-02 20:35:36,156 - INFO - ModelManager initialized with device: cpu
+2025-05-02 20:35:36,157 - INFO - Loading default TTS model...
+2025-05-02 20:36:30,792 - INFO - ModelManager initialized with device: cpu
+2025-05-02 20:36:30,793 - INFO - Loading default TTS model...
+2025-05-02 20:39:05,528 - INFO - ModelManager initialized with device: cpu
+2025-05-02 20:39:05,529 - INFO - Loading default TTS model...
+2025-05-02 20:44:34,069 - INFO - ModelManager initialized with device: cpu
+2025-05-02 20:44:34,071 - INFO - Loading default TTS model...
+2025-05-02 20:52:15,068 - INFO - ModelManager initialized with device: cpu
+2025-05-02 20:52:15,069 - INFO - Loading default TTS model...
+2025-05-02 20:52:18,624 - INFO - Default model loaded successfully
+2025-05-02 20:53:20,342 - INFO - ModelManager initialized with device: cpu
+2025-05-02 20:53:20,342 - INFO - Loading default TTS model...
+2025-05-02 20:53:22,297 - INFO - Default model loaded successfully
+2025-05-02 20:54:28,167 - INFO - ModelManager initialized with device: cpu
+2025-05-02 20:54:28,168 - INFO - Loading default TTS model...
+2025-05-02 20:54:30,664 - INFO - Default model loaded successfully
+2025-05-02 20:55:58,241 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 20:55:58,243 - INFO - Applied default text preprocessing
+2025-05-02 20:55:58,243 - INFO - Preprocessing completed in 0.000s
+2025-05-02 20:55:58,243 - ERROR - Error in GenerateSpeech after 0.003s: 'SpeechT5Tokenizer' object is not subscriptable
+2025-05-02 21:06:43,128 - INFO - ModelManager initialized with device: cpu
+2025-05-02 21:06:43,128 - INFO - Loading default TTS model...
+2025-05-02 21:35:48,350 - INFO - ModelManager initialized with device: cpu
+2025-05-02 21:35:48,351 - INFO - Loading default TTS model...
+2025-05-02 21:35:51,760 - INFO - Default model loaded successfully
+2025-05-02 21:36:06,062 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 21:36:06,063 - INFO - Applied default text preprocessing
+2025-05-02 21:36:06,063 - INFO - Preprocessing completed in 0.000s
+2025-05-02 21:36:06,069 - INFO - Tokenization completed in 0.006s
+2025-05-02 21:36:06,071 - ERROR - Error in GenerateSpeech after 0.009s: `speaker_embeddings` must be specified. For example, you can use a speaker embeddings by following
+                    the code snippet provided in this link:
+                    https://huggingface.co/datasets/Matthijs/cmu-arctic-xvectors
+                    
+2025-05-02 21:45:46,304 - INFO - ModelManager initialized with device: cpu
+2025-05-02 21:45:46,305 - INFO - Loading default TTS model...
+2025-05-02 21:45:50,054 - INFO - Default model loaded successfully
+2025-05-02 21:45:59,193 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-02 21:45:59,193 - INFO - Applied default text preprocessing
+2025-05-02 21:45:59,194 - INFO - Preprocessing completed in 0.001s
+2025-05-02 21:45:59,197 - INFO - Tokenization completed in 0.003s
+2025-05-02 21:45:59,200 - ERROR - Error in GenerateSpeech after 0.006s: cannot access local variable 'speaker_embeddings' where it is not associated with a value
+2025-05-03 00:28:06,976 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-03 00:29:30,063 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 00:29:30,074 - INFO - Preprocessing completed in 0.008s
+2025-05-03 00:29:30,095 - INFO - Tokenization completed in 0.021s
+2025-05-03 00:30:22,055 - ERROR - Error in GenerateSpeech after 51.993s: Got unsupported ScalarType BFloat16
+2025-05-03 00:31:18,924 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 00:31:18,933 - INFO - Preprocessing completed in 0.003s
+2025-05-03 00:31:19,004 - INFO - Tokenization completed in 0.070s
+2025-05-03 00:32:06,403 - ERROR - Error in GenerateSpeech after 47.478s: Got unsupported ScalarType BFloat16
+2025-05-03 00:35:01,270 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 00:35:01,271 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:35:01,274 - INFO - Tokenization completed in 0.003s
+2025-05-03 00:35:09,182 - INFO - Model inference completed in 7.905s
+2025-05-03 00:35:09,213 - INFO - Successfully generated audio of size: 130092 bytes in 7.943s
+2025-05-03 00:38:32,810 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 00:38:32,817 - INFO - Preprocessing completed in 0.003s
+2025-05-03 00:38:32,835 - INFO - Tokenization completed in 0.018s
+2025-05-03 00:38:35,972 - INFO - Model inference completed in 3.135s
+2025-05-03 00:38:35,995 - INFO - Successfully generated audio of size: 125996 bytes in 3.185s
+2025-05-03 00:39:25,449 - INFO - Received request with text: 'mera naam azeem hai ...'
+2025-05-03 00:39:25,451 - INFO - Preprocessing completed in 0.001s
+2025-05-03 00:39:25,520 - INFO - Tokenization completed in 0.068s
+2025-05-03 00:39:26,842 - INFO - Model inference completed in 1.321s
+2025-05-03 00:39:26,855 - INFO - Successfully generated audio of size: 58412 bytes in 1.408s
+2025-05-03 00:40:19,128 - INFO - Received request with text: 'It was a cold, misty...'
+2025-05-03 00:40:19,138 - INFO - Preprocessing completed in 0.004s
+2025-05-03 00:40:19,244 - INFO - Tokenization completed in 0.104s
+2025-05-03 00:40:19,259 - INFO - Long text detected, processing in chunks
+2025-05-03 00:40:43,965 - INFO - Model inference completed in 24.722s
+2025-05-03 00:40:43,994 - INFO - Successfully generated audio of size: 2444332 bytes in 24.868s
+2025-05-03 00:43:54,951 - INFO - Received request with text: 'Life is what happens...'
+2025-05-03 00:43:54,956 - INFO - Preprocessing completed in 0.001s
+2025-05-03 00:43:54,972 - INFO - Tokenization completed in 0.016s
+2025-05-03 00:43:55,957 - INFO - Model inference completed in 0.985s
+2025-05-03 00:43:55,961 - INFO - Successfully generated audio of size: 144428 bytes in 1.011s
+2025-05-03 00:43:55,968 - INFO - Received request with text: 'In the midst of wint...'
+2025-05-03 00:43:55,968 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:43:55,969 - INFO - Tokenization completed in 0.000s
+2025-05-03 00:43:56,970 - INFO - Model inference completed in 1.000s
+2025-05-03 00:43:56,970 - INFO - Successfully generated audio of size: 200748 bytes in 1.003s
+2025-05-03 00:43:56,976 - INFO - Received request with text: 'This is a short test...'
+2025-05-03 00:43:56,976 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:43:56,977 - INFO - Tokenization completed in 0.001s
+2025-05-03 00:43:57,338 - INFO - Model inference completed in 0.361s
+2025-05-03 00:43:57,339 - INFO - Successfully generated audio of size: 62508 bytes in 0.363s
+2025-05-03 00:43:57,343 - INFO - Received request with text: 'Testing concurrent a...'
+2025-05-03 00:43:57,343 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:43:57,347 - INFO - Tokenization completed in 0.003s
+2025-05-03 00:43:58,567 - INFO - Model inference completed in 1.220s
+2025-05-03 00:43:58,568 - INFO - Successfully generated audio of size: 217132 bytes in 1.225s
+2025-05-03 00:43:58,575 - INFO - Received request with text: 'Testing concurrent a...'
+2025-05-03 00:43:58,575 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:43:58,576 - INFO - Tokenization completed in 0.001s
+2025-05-03 00:43:59,795 - INFO - Model inference completed in 1.219s
+2025-05-03 00:43:59,798 - INFO - Successfully generated audio of size: 222252 bytes in 1.223s
+2025-05-03 00:43:59,804 - INFO - Received request with text: 'The quick brown fox ...'
+2025-05-03 00:43:59,805 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:43:59,807 - INFO - Tokenization completed in 0.002s
+2025-05-03 00:44:00,528 - INFO - Model inference completed in 0.720s
+2025-05-03 00:44:00,529 - INFO - Successfully generated audio of size: 113708 bytes in 0.725s
+2025-05-03 00:44:00,533 - INFO - Received request with text: 'Life is what happens...'
+2025-05-03 00:44:00,533 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:44:00,534 - INFO - Tokenization completed in 0.001s
+2025-05-03 00:44:01,244 - INFO - Model inference completed in 0.710s
+2025-05-03 00:44:01,245 - INFO - Successfully generated audio of size: 143404 bytes in 0.712s
+2025-05-03 00:44:01,249 - INFO - Received request with text: 'The only way to do g...'
+2025-05-03 00:44:01,250 - INFO - Preprocessing completed in 0.001s
+2025-05-03 00:44:01,252 - INFO - Tokenization completed in 0.002s
+2025-05-03 00:44:01,870 - INFO - Model inference completed in 0.618s
+2025-05-03 00:44:01,871 - INFO - Successfully generated audio of size: 122924 bytes in 0.622s
+2025-05-03 00:44:01,875 - INFO - Received request with text: 'The quick brown fox ...'
+2025-05-03 00:44:01,875 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:44:01,876 - INFO - Tokenization completed in 0.001s
+2025-05-03 00:44:02,433 - INFO - Model inference completed in 0.558s
+2025-05-03 00:44:02,434 - INFO - Successfully generated audio of size: 111660 bytes in 0.560s
+2025-05-03 00:44:02,439 - INFO - Received request with text: 'Testing concurrent a...'
+2025-05-03 00:44:02,439 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:44:02,440 - INFO - Tokenization completed in 0.001s
+2025-05-03 00:44:03,488 - INFO - Model inference completed in 1.047s
+2025-05-03 00:44:03,490 - INFO - Successfully generated audio of size: 199724 bytes in 1.050s
+2025-05-03 00:44:03,827 - INFO - Received request with text: 'Artificial intellige...'
+2025-05-03 00:44:03,827 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:44:03,832 - INFO - Tokenization completed in 0.004s
+2025-05-03 00:44:05,350 - INFO - Model inference completed in 1.518s
+2025-05-03 00:44:05,351 - INFO - Successfully generated audio of size: 252972 bytes in 1.524s
+2025-05-03 00:44:05,356 - INFO - Received request with text: 'This is a short test...'
+2025-05-03 00:44:05,357 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:44:05,358 - INFO - Tokenization completed in 0.001s
+2025-05-03 00:44:05,764 - INFO - Model inference completed in 0.405s
+2025-05-03 00:44:05,766 - INFO - Successfully generated audio of size: 60460 bytes in 0.408s
+2025-05-03 00:44:05,770 - INFO - Received request with text: 'Testing concurrent a...'
+2025-05-03 00:44:05,770 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:44:05,771 - INFO - Tokenization completed in 0.001s
+2025-05-03 00:44:07,290 - INFO - Model inference completed in 1.519s
+2025-05-03 00:44:07,293 - INFO - Successfully generated audio of size: 227372 bytes in 1.524s
+2025-05-03 00:44:07,300 - INFO - Received request with text: 'In the midst of wint...'
+2025-05-03 00:44:07,300 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:44:07,302 - INFO - Tokenization completed in 0.002s
+2025-05-03 00:44:08,387 - INFO - Model inference completed in 1.085s
+2025-05-03 00:44:08,388 - INFO - Successfully generated audio of size: 196652 bytes in 1.088s
+2025-05-03 00:44:08,393 - INFO - Received request with text: 'This is a short test...'
+2025-05-03 00:44:08,393 - INFO - Preprocessing completed in 0.000s
+2025-05-03 00:44:08,393 - INFO - Tokenization completed in 0.000s
+2025-05-03 00:44:08,714 - INFO - Model inference completed in 0.320s
+2025-05-03 00:44:08,714 - INFO - Successfully generated audio of size: 61484 bytes in 0.321s
