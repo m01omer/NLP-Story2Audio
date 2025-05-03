@@ -68,7 +68,14 @@ def is_port_available(port):
 
 # Load Speaker Embeddings
 embeddings_dataset = load_dataset("Matthijs/cmu-arctic-xvectors", split="validation")
-speaker_embedding = torch.tensor(embeddings_dataset[0]["xvector"]).unsqueeze(0)
+# speaker_embedding = torch.tensor(embeddings_dataset[0]["xvector"]).unsqueeze(0)
+def get_speaker_embedding(speaker_name: str):
+    for e in embeddings_dataset:
+        if e["filename"].split("/")[0].lower() == speaker_name.lower():
+            return torch.tensor(e["xvector"]).unsqueeze(0)
+    logging.warning(f"Speaker '{speaker_name}' not found, using default.")
+    return torch.tensor(embeddings_dataset[0]["xvector"]).unsqueeze(0)
+
 
 # Initialize components
 text_preprocessor = TextPreprocessor()
@@ -79,11 +86,12 @@ model_lock = asyncio.Lock()
 
 class TTSServicer(tts_service_pb2_grpc.TTSServicer):
     async def GenerateSpeech(self, request, context):
+        
         start_time = time.time()
         try:
             original_text = request.text
             original_desc = request.description
-            
+            speaker_embedding = get_speaker_embedding(original_desc)
             logging.info(f"Received request with text: '{original_text[:20]}...'")
             
             if not original_text.strip() or not original_desc.strip():

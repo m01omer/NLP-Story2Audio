@@ -6004,3 +6004,256 @@
 2025-05-03 00:44:08,393 - INFO - Tokenization completed in 0.000s
 2025-05-03 00:44:08,714 - INFO - Model inference completed in 0.320s
 2025-05-03 00:44:08,714 - INFO - Successfully generated audio of size: 61484 bytes in 0.321s
+2025-05-03 01:16:06,008 - INFO - Using speaker voice: default
+2025-05-03 01:16:06,013 - INFO - Received request with text: 'It was a cold, misty...'
+2025-05-03 01:16:06,026 - INFO - Preprocessing completed in 0.011s
+2025-05-03 01:16:06,098 - INFO - Tokenization completed in 0.072s
+2025-05-03 01:16:06,099 - INFO - Long text detected, processing in chunks
+2025-05-03 01:24:25,309 - INFO - Received request with text: 'It was a cold, misty...'
+2025-05-03 01:24:25,349 - INFO - Preprocessing completed in 0.019s
+2025-05-03 01:24:25,482 - INFO - Tokenization completed in 0.130s
+2025-05-03 01:24:25,487 - INFO - Long text detected, processing in chunks
+2025-05-03 01:24:42,463 - INFO - Model inference completed in 16.981s
+2025-05-03 01:24:42,499 - INFO - Successfully generated audio of size: 2722860 bytes in 17.201s
+2025-05-03 14:46:03,015 - INFO - Using speaker voice: default
+2025-05-03 14:46:03,031 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 14:46:03,042 - INFO - Preprocessing completed in 0.010s
+2025-05-03 14:46:03,126 - INFO - Tokenization completed in 0.085s
+2025-05-03 14:46:09,817 - INFO - Model inference completed in 6.689s
+2025-05-03 14:46:09,878 - INFO - Successfully generated audio of size: 125996 bytes in 6.868s
+2025-05-03 14:50:52,241 - INFO - Using speaker voice: default
+2025-05-03 14:50:52,249 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 14:50:52,251 - INFO - Preprocessing completed in 0.001s
+2025-05-03 14:50:52,300 - INFO - Tokenization completed in 0.049s
+2025-05-03 14:51:00,317 - INFO - Model inference completed in 8.014s
+2025-05-03 14:51:00,342 - INFO - Successfully generated audio of size: 130092 bytes in 8.103s
+2025-05-03 14:52:23,355 - INFO - Using speaker voice: default
+2025-05-03 14:52:23,356 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 14:52:23,356 - INFO - Preprocessing completed in 0.000s
+2025-05-03 14:52:23,359 - INFO - Tokenization completed in 0.003s
+2025-05-03 14:52:30,108 - INFO - Model inference completed in 6.747s
+2025-05-03 14:52:30,131 - INFO - Successfully generated audio of size: 129068 bytes in 6.776s
+2025-05-03 15:02:01,582 - ERROR - Error in GenerateSpeech after 0.025s: 'speaker_id'
+2025-05-03 15:02:11,008 - ERROR - Error in GenerateSpeech after 0.001s: 'speaker_id'
+2025-05-03 15:02:34,983 - ERROR - Error in GenerateSpeech after 0.001s: 'speaker_id'
+2025-05-03 15:05:15,067 - ERROR - Error in GenerateSpeech after 0.038s: 'speaker_id'
+2025-05-03 15:07:03,925 - ERROR - Error in GenerateSpeech after 0.027s: 'speaker_id'
+2025-05-03 15:08:12,019 - ERROR - Error in GenerateSpeech after 0.026s: 'description'
+2025-05-03 15:09:22,970 - ERROR - Error in GenerateSpeech after 0.036s: 'dict' object has no attribute 'lower'
+2025-05-03 15:10:17,013 - WARNING - Speaker 'clb' not found, using default.
+2025-05-03 15:10:17,025 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:10:17,027 - INFO - Preprocessing completed in 0.001s
+2025-05-03 15:10:17,035 - INFO - Tokenization completed in 0.008s
+2025-05-03 15:10:21,104 - INFO - Model inference completed in 4.069s
+2025-05-03 15:10:21,122 - INFO - Successfully generated audio of size: 129068 bytes in 8.609s
+2025-05-03 15:10:50,096 - WARNING - Speaker 'female' not found, using default.
+2025-05-03 15:10:50,141 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:10:50,141 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:10:50,189 - INFO - Tokenization completed in 0.046s
+2025-05-03 15:10:51,706 - INFO - Model inference completed in 1.518s
+2025-05-03 15:10:51,720 - INFO - Successfully generated audio of size: 133164 bytes in 5.825s
+2025-05-03 15:12:29,927 - WARNING - Speaker 'female, English, US accent' not found, using default.
+2025-05-03 15:12:29,956 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:12:29,956 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:12:29,973 - INFO - Tokenization completed in 0.016s
+2025-05-03 15:12:32,049 - INFO - Model inference completed in 2.077s
+2025-05-03 15:12:32,060 - INFO - Successfully generated audio of size: 128044 bytes in 5.327s
+2025-05-03 15:15:51,052 - WARNING - Speaker 'clb' not found, using default.
+2025-05-03 15:15:51,058 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:15:51,059 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:15:51,069 - INFO - Tokenization completed in 0.008s
+2025-05-03 15:15:52,529 - INFO - Model inference completed in 1.461s
+2025-05-03 15:15:52,534 - INFO - Successfully generated audio of size: 132140 bytes in 5.322s
+2025-05-03 15:18:50,592 - INFO - Sample fields in embeddings_dataset: ['filename', 'xvector']
+2025-05-03 15:19:33,243 - ERROR - Error in GenerateSpeech after 0.057s: 'speaker_id'
+2025-05-03 15:20:11,190 - INFO - Sample fields in embeddings_dataset: ['filename', 'xvector']
+2025-05-03 15:20:29,527 - WARNING - Speaker 'clb' not found, using default.
+2025-05-03 15:20:29,534 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:20:29,535 - INFO - Preprocessing completed in 0.001s
+2025-05-03 15:20:29,541 - INFO - Tokenization completed in 0.006s
+2025-05-03 15:20:32,483 - INFO - Model inference completed in 2.939s
+2025-05-03 15:20:32,495 - INFO - Successfully generated audio of size: 128044 bytes in 6.703s
+2025-05-03 15:21:32,475 - INFO - Sample fields in embeddings_dataset: ['filename', 'xvector']
+2025-05-03 15:21:54,942 - WARNING - Speaker 'clb' not found, using default.
+2025-05-03 15:21:54,952 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:21:54,955 - INFO - Preprocessing completed in 0.002s
+2025-05-03 15:21:54,963 - INFO - Tokenization completed in 0.008s
+2025-05-03 15:21:57,821 - INFO - Model inference completed in 2.858s
+2025-05-03 15:21:57,836 - INFO - Successfully generated audio of size: 128044 bytes in 6.772s
+2025-05-03 15:25:49,672 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:25:49,679 - INFO - Preprocessing completed in 0.001s
+2025-05-03 15:25:49,711 - INFO - Tokenization completed in 0.030s
+2025-05-03 15:25:51,557 - INFO - Model inference completed in 1.846s
+2025-05-03 15:25:51,565 - INFO - Successfully generated audio of size: 101420 bytes in 3.062s
+2025-05-03 15:31:48,619 - WARNING - Speaker '/cmu_us_slt_arctic-wav-arctic_a0508' not found, using default.
+2025-05-03 15:31:48,663 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:31:48,665 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:31:48,722 - INFO - Tokenization completed in 0.058s
+2025-05-03 15:31:50,179 - INFO - Model inference completed in 1.457s
+2025-05-03 15:31:50,194 - INFO - Successfully generated audio of size: 127020 bytes in 5.502s
+2025-05-03 15:32:47,462 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:32:47,463 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:32:47,494 - INFO - Tokenization completed in 0.031s
+2025-05-03 15:32:48,810 - INFO - Model inference completed in 1.316s
+2025-05-03 15:32:48,813 - INFO - Successfully generated audio of size: 88108 bytes in 4.104s
+2025-05-03 15:33:07,151 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:33:07,152 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:33:07,155 - INFO - Tokenization completed in 0.003s
+2025-05-03 15:33:08,037 - INFO - Model inference completed in 0.882s
+2025-05-03 15:33:08,038 - INFO - Successfully generated audio of size: 108588 bytes in 2.332s
+2025-05-03 15:33:18,934 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:33:18,934 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:33:18,937 - INFO - Tokenization completed in 0.002s
+2025-05-03 15:33:19,888 - INFO - Model inference completed in 0.951s
+2025-05-03 15:33:19,888 - INFO - Successfully generated audio of size: 118828 bytes in 2.230s
+2025-05-03 15:33:28,441 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:33:28,441 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:33:28,443 - INFO - Tokenization completed in 0.001s
+2025-05-03 15:33:29,250 - INFO - Model inference completed in 0.806s
+2025-05-03 15:33:29,250 - INFO - Successfully generated audio of size: 98348 bytes in 1.059s
+2025-05-03 15:33:58,281 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 15:33:58,285 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:33:58,285 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:33:58,288 - INFO - Tokenization completed in 0.002s
+2025-05-03 15:33:59,240 - INFO - Model inference completed in 0.951s
+2025-05-03 15:33:59,242 - INFO - Successfully generated audio of size: 132140 bytes in 2.744s
+2025-05-03 15:34:11,619 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:34:11,619 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:34:11,623 - INFO - Tokenization completed in 0.004s
+2025-05-03 15:34:12,579 - INFO - Model inference completed in 0.956s
+2025-05-03 15:34:12,581 - INFO - Successfully generated audio of size: 117804 bytes in 2.295s
+2025-05-03 15:34:18,535 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:34:18,535 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:34:18,538 - INFO - Tokenization completed in 0.003s
+2025-05-03 15:34:19,337 - INFO - Model inference completed in 0.799s
+2025-05-03 15:34:19,339 - INFO - Successfully generated audio of size: 97324 bytes in 1.047s
+2025-05-03 15:34:25,775 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 15:34:25,776 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:34:25,777 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:34:25,780 - INFO - Tokenization completed in 0.002s
+2025-05-03 15:34:26,669 - INFO - Model inference completed in 0.889s
+2025-05-03 15:34:26,670 - INFO - Successfully generated audio of size: 125996 bytes in 2.554s
+2025-05-03 15:34:34,031 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:34:34,031 - INFO - Preprocessing completed in 0.000s
+2025-05-03 15:34:34,034 - INFO - Tokenization completed in 0.003s
+2025-05-03 15:34:34,921 - INFO - Model inference completed in 0.887s
+2025-05-03 15:34:34,923 - INFO - Successfully generated audio of size: 104492 bytes in 1.376s
+2025-05-03 15:42:58,482 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 15:42:58,486 - INFO - Preprocessing completed in 0.002s
+2025-05-03 15:42:58,495 - INFO - Tokenization completed in 0.009s
+2025-05-03 15:43:00,710 - INFO - Model inference completed in 2.213s
+2025-05-03 15:43:00,728 - INFO - Successfully generated audio of size: 102444 bytes in 2.936s
+2025-05-03 16:11:15,367 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:11:15,435 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:11:15,436 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:11:15,496 - INFO - Tokenization completed in 0.057s
+2025-05-03 16:11:16,706 - INFO - Model inference completed in 1.211s
+2025-05-03 16:11:16,725 - INFO - Successfully generated audio of size: 125996 bytes in 3.117s
+2025-05-03 16:13:07,499 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:13:07,505 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:13:07,506 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:13:07,521 - INFO - Tokenization completed in 0.014s
+2025-05-03 16:13:09,255 - INFO - Model inference completed in 1.733s
+2025-05-03 16:13:09,261 - INFO - Successfully generated audio of size: 125996 bytes in 5.580s
+2025-05-03 16:14:33,531 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:14:33,584 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:14:33,584 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:14:33,628 - INFO - Tokenization completed in 0.044s
+2025-05-03 16:14:35,408 - INFO - Model inference completed in 1.779s
+2025-05-03 16:14:35,423 - INFO - Successfully generated audio of size: 134188 bytes in 5.036s
+2025-05-03 16:17:03,828 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:17:03,861 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:17:03,862 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:17:03,894 - INFO - Tokenization completed in 0.031s
+2025-05-03 16:17:05,457 - INFO - Model inference completed in 1.562s
+2025-05-03 16:17:05,460 - INFO - Successfully generated audio of size: 129068 bytes in 4.872s
+2025-05-03 16:19:13,503 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:19:13,530 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:19:13,530 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:19:13,563 - INFO - Tokenization completed in 0.034s
+2025-05-03 16:19:14,864 - INFO - Model inference completed in 1.299s
+2025-05-03 16:19:14,876 - INFO - Successfully generated audio of size: 127020 bytes in 6.422s
+2025-05-03 16:21:29,321 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:21:29,362 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:21:29,362 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:21:29,406 - INFO - Tokenization completed in 0.044s
+2025-05-03 16:21:30,587 - INFO - Model inference completed in 1.181s
+2025-05-03 16:21:30,604 - INFO - Successfully generated audio of size: 127020 bytes in 2.952s
+2025-05-03 16:22:52,852 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:22:52,908 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:22:52,908 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:22:52,981 - INFO - Tokenization completed in 0.072s
+2025-05-03 16:22:54,714 - INFO - Model inference completed in 1.732s
+2025-05-03 16:22:54,728 - INFO - Successfully generated audio of size: 125996 bytes in 5.346s
+2025-05-03 16:23:19,277 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:23:19,280 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:23:19,280 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:23:19,286 - INFO - Tokenization completed in 0.006s
+2025-05-03 16:23:20,932 - INFO - Model inference completed in 1.646s
+2025-05-03 16:23:20,934 - INFO - Successfully generated audio of size: 127020 bytes in 5.842s
+2025-05-03 16:23:51,359 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:23:51,409 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:23:51,410 - INFO - Preprocessing completed in 0.001s
+2025-05-03 16:23:51,470 - INFO - Tokenization completed in 0.059s
+2025-05-03 16:23:53,292 - INFO - Model inference completed in 1.821s
+2025-05-03 16:23:53,305 - INFO - Successfully generated audio of size: 133164 bytes in 6.057s
+2025-05-03 16:24:21,559 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:24:21,566 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:24:21,566 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:24:21,576 - INFO - Tokenization completed in 0.010s
+2025-05-03 16:24:23,249 - INFO - Model inference completed in 1.673s
+2025-05-03 16:24:23,252 - INFO - Successfully generated audio of size: 125996 bytes in 5.817s
+2025-05-03 16:25:10,404 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:25:10,424 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:25:10,424 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:25:10,459 - INFO - Tokenization completed in 0.035s
+2025-05-03 16:25:12,106 - INFO - Model inference completed in 1.646s
+2025-05-03 16:25:12,124 - INFO - Successfully generated audio of size: 129068 bytes in 3.339s
+2025-05-03 16:38:30,375 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:38:30,449 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:38:30,449 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:38:30,531 - INFO - Tokenization completed in 0.080s
+2025-05-03 16:38:32,336 - INFO - Model inference completed in 1.804s
+2025-05-03 16:38:32,354 - INFO - Successfully generated audio of size: 132140 bytes in 5.332s
+2025-05-03 16:38:42,533 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:38:42,534 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:38:42,534 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:38:42,537 - INFO - Tokenization completed in 0.003s
+2025-05-03 16:38:43,813 - INFO - Model inference completed in 1.275s
+2025-05-03 16:38:43,816 - INFO - Successfully generated audio of size: 124972 bytes in 4.729s
+2025-05-03 16:38:55,778 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:38:55,779 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:38:55,781 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:38:55,783 - INFO - Tokenization completed in 0.002s
+2025-05-03 16:38:57,614 - INFO - Model inference completed in 1.830s
+2025-05-03 16:38:57,621 - INFO - Successfully generated audio of size: 138284 bytes in 6.530s
+2025-05-03 16:39:30,028 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:39:30,056 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:39:30,056 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:39:30,078 - INFO - Tokenization completed in 0.022s
+2025-05-03 16:39:31,535 - INFO - Model inference completed in 1.458s
+2025-05-03 16:39:31,540 - INFO - Successfully generated audio of size: 127020 bytes in 4.312s
+2025-05-03 16:39:38,485 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:39:38,486 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:39:38,486 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:39:38,488 - INFO - Tokenization completed in 0.002s
+2025-05-03 16:39:39,463 - INFO - Model inference completed in 0.973s
+2025-05-03 16:39:39,465 - INFO - Successfully generated audio of size: 129068 bytes in 4.458s
+2025-05-03 16:40:00,182 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:40:00,183 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:40:00,183 - INFO - Preprocessing completed in 0.000s
+2025-05-03 16:40:00,185 - INFO - Tokenization completed in 0.002s
+2025-05-03 16:40:01,165 - INFO - Model inference completed in 0.980s
+2025-05-03 16:40:01,167 - INFO - Successfully generated audio of size: 132140 bytes in 2.698s
+2025-05-03 16:41:55,571 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:41:55,635 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:41:55,636 - INFO - Preprocessing completed in 0.001s
+2025-05-03 16:41:55,701 - INFO - Tokenization completed in 0.064s
+2025-05-03 16:41:57,127 - INFO - Model inference completed in 1.427s
+2025-05-03 16:41:57,149 - INFO - Successfully generated audio of size: 130092 bytes in 3.701s
+2025-05-03 16:43:39,855 - WARNING - Speaker 'Default' not found, using default.
+2025-05-03 16:43:39,929 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-03 16:43:39,934 - INFO - Preprocessing completed in 0.004s
+2025-05-03 16:43:40,029 - INFO - Tokenization completed in 0.092s
+2025-05-03 16:43:42,111 - INFO - Model inference completed in 2.082s
+2025-05-03 16:43:42,134 - INFO - Successfully generated audio of size: 128044 bytes in 7.693s
