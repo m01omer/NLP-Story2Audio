@@ -177,7 +177,7 @@ if 'loaded' not in st.session_state:
             });
         </script>
     """, unsafe_allow_html=True)
-    st.markdown("<h2 style='text-align:center;'>Welcome to the Text-to-Speech Demo! 🎙️</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align:center;'>Welcome to Story Narrator</h2>", unsafe_allow_html=True)
     with st.spinner("Loading app..."):
         time.sleep(3)
     st.session_state.loaded = True
@@ -187,7 +187,7 @@ if 'loaded' not in st.session_state:
 st.markdown(
     """
     <div style='text-align: center; padding: 10px 0 20px 0;'>
-        <h1>✨ Text to Speech Converter ✨</h1>
+        <h1>✨ Story Narrator ✨</h1>
         <p>Transform your written words into natural-sounding speech</p>
     </div>
     """, 
@@ -451,10 +451,7 @@ with tab1:
                     # Create request with advanced parameters - use actual_speed from simplified control
                     request = tts_service_pb2.TextRequest(
                         text=text, 
-                        description=voice_id,
-                        speed=actual_speed if simplified_speed != "Normal" else st.session_state.speed,
-                        pitch=st.session_state.pitch,
-                        emphasis=st.session_state.emphasis
+                        description=voice_id
                     )
                     
                     start_time = time.time()
@@ -618,7 +615,7 @@ with tab3:
 st.divider()
 footer_col1, footer_col2, footer_col3 = st.columns(3)
 with footer_col1:
-    st.markdown("Made with ❤️ and Streamlit")
+    st.markdown("Story Teller | Text to Speech | TTS")
 with footer_col2:
     if in_docker:
         st.caption("TTS Demo Application (Docker Environment)")

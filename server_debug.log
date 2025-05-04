@@ -6294,3 +6294,254 @@
 2025-05-04 16:39:45,300 - INFO - Tokenization completed in 0.003s
 2025-05-04 16:39:46,312 - INFO - Model inference completed in 1.010s
 2025-05-04 16:39:46,313 - INFO - Successfully generated audio of size: 60460 bytes in 1.825s
+2025-05-04 23:04:23,310 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:04:23,326 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:04:23,330 - INFO - Preprocessing completed in 0.003s
+2025-05-04 23:04:23,344 - INFO - Tokenization completed in 0.014s
+2025-05-04 23:04:33,215 - INFO - Model inference completed in 9.868s
+2025-05-04 23:04:33,256 - INFO - Successfully generated audio of size: 124972 bytes in 14.180s
+2025-05-04 23:05:30,628 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:05:30,683 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:05:30,687 - INFO - Preprocessing completed in 0.002s
+2025-05-04 23:05:30,741 - INFO - Tokenization completed in 0.052s
+2025-05-04 23:05:37,949 - INFO - Model inference completed in 7.206s
+2025-05-04 23:05:37,974 - INFO - Successfully generated audio of size: 128044 bytes in 9.512s
+2025-05-04 23:07:03,522 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:07:03,544 - INFO - Received request with text: 'Hello my name is wha...'
+2025-05-04 23:07:03,553 - INFO - Preprocessing completed in 0.009s
+2025-05-04 23:07:03,574 - INFO - Tokenization completed in 0.021s
+2025-05-04 23:07:11,965 - INFO - Model inference completed in 8.390s
+2025-05-04 23:07:11,983 - INFO - Successfully generated audio of size: 147500 bytes in 14.639s
+2025-05-04 23:16:48,977 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:16:49,042 - INFO - Received request with text: 'Enter your text here...'
+2025-05-04 23:16:49,046 - INFO - Preprocessing completed in 0.004s
+2025-05-04 23:16:49,076 - INFO - Tokenization completed in 0.029s
+2025-05-04 23:16:54,081 - INFO - Model inference completed in 5.004s
+2025-05-04 23:16:54,104 - INFO - Successfully generated audio of size: 98348 bytes in 9.777s
+2025-05-04 23:20:23,425 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:20:23,488 - INFO - Received request with text: 'Here is a \~1500-wor...'
+2025-05-04 23:20:23,507 - INFO - Preprocessing completed in 0.018s
+2025-05-04 23:20:23,570 - INFO - Tokenization completed in 0.062s
+2025-05-04 23:20:23,576 - INFO - Long text detected, processing in chunks
+2025-05-04 23:26:12,837 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<<coroutine without __name__>()> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\server\server.py", line 279, in <module>
+    asyncio.run(serve())
+  File "C:\Users\Azeem\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 678, in run_until_complete
+    self.run_forever()
+  File "C:\Users\Azeem\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 322, in run_forever
+    super().run_forever()
+  File "C:\Users\Azeem\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 645, in run_forever
+    self._run_once()
+  File "C:\Users\Azeem\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1999, in _run_once
+    handle._run()
+  File "C:\Users\Azeem\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 702, in _handle_exceptions
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 689, in grpc._cython.cygrpc._handle_exceptions
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 821, in _handle_rpc
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 554, in _handle_unary_unary_rpc
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 408, in _finish_handler_with_unary_response
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\server\server.py", line 162, in GenerateSpeech
+    chunk_audio = model.generate_speech(
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\transformers\models\speecht5\modeling_speecht5.py", line 2937, in generate_speech
+    return _generate_speech(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\transformers\models\speecht5\modeling_speecht5.py", line 2523, in _generate_speech
+    decoder_out = model.speecht5.decoder.wrapped_decoder(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\transformers\models\speecht5\modeling_speecht5.py", line 1659, in forward
+    layer_outputs = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\transformers\models\speecht5\modeling_speecht5.py", line 1176, in forward
+    hidden_states, cross_attn_weights, cross_attn_present_key_value = self.encoder_attn(
+                                                                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\Documents\Programming\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeem\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+2025-05-04 23:27:21,453 - WARNING - Speaker 'rms' not found, using default.
+2025-05-04 23:27:21,457 - INFO - Received request with text: 'It was a quiet morni...'
+2025-05-04 23:27:21,460 - INFO - Preprocessing completed in 0.003s
+2025-05-04 23:27:21,471 - INFO - Tokenization completed in 0.009s
+2025-05-04 23:27:21,472 - INFO - Long text detected, processing in chunks
+2025-05-04 23:35:29,242 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:35:29,260 - INFO - Received request with text: 'Enter your text here...'
+2025-05-04 23:35:29,277 - INFO - Preprocessing completed in 0.017s
+2025-05-04 23:35:29,301 - INFO - Tokenization completed in 0.023s
+2025-05-04 23:35:31,728 - INFO - Model inference completed in 2.425s
+2025-05-04 23:35:31,774 - INFO - Successfully generated audio of size: 101420 bytes in 5.428s
+2025-05-04 23:37:26,984 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:37:27,033 - INFO - Received request with text: 'It was a quiet morni...'
+2025-05-04 23:37:27,049 - INFO - Preprocessing completed in 0.016s
+2025-05-04 23:37:27,136 - INFO - Tokenization completed in 0.084s
+2025-05-04 23:37:27,151 - INFO - Long text detected, processing in chunks
+2025-05-04 23:38:07,241 - INFO - Model inference completed in 40.104s
+2025-05-04 23:38:07,279 - INFO - Successfully generated audio of size: 4884524 bytes in 42.563s
+2025-05-04 23:41:42,964 - WARNING - Speaker 'slt' not found, using default.
+2025-05-04 23:41:43,016 - INFO - Received request with text: 'It was a quiet morni...'
+2025-05-04 23:41:43,018 - INFO - Preprocessing completed in 0.001s
+2025-05-04 23:41:43,115 - INFO - Tokenization completed in 0.095s
+2025-05-04 23:41:43,119 - INFO - Long text detected, processing in chunks
+2025-05-04 23:42:46,161 - INFO - Model inference completed in 63.044s
+2025-05-04 23:42:46,221 - INFO - Successfully generated audio of size: 5069868 bytes in 69.906s
+2025-05-04 23:45:24,047 - WARNING - Speaker 'slt' not found, using default.
+2025-05-04 23:45:24,082 - INFO - Received request with text: 'It was a quiet morni...'
+2025-05-04 23:45:24,083 - INFO - Preprocessing completed in 0.000s
+2025-05-04 23:45:24,139 - INFO - Tokenization completed in 0.055s
+2025-05-04 23:45:24,141 - INFO - Long text detected, processing in chunks
+2025-05-04 23:46:15,971 - INFO - Model inference completed in 51.831s
+2025-05-04 23:46:16,013 - INFO - Successfully generated audio of size: 4995116 bytes in 57.926s
+2025-05-04 23:47:06,512 - WARNING - Speaker 'slt' not found, using default.
+2025-05-04 23:47:06,516 - INFO - Received request with text: 'It was a quiet morni...'
+2025-05-04 23:47:06,516 - INFO - Preprocessing completed in 0.000s
+2025-05-04 23:47:06,523 - INFO - Tokenization completed in 0.007s
+2025-05-04 23:47:06,523 - INFO - Long text detected, processing in chunks
+2025-05-04 23:47:38,286 - INFO - Model inference completed in 31.763s
+2025-05-04 23:47:38,309 - INFO - Successfully generated audio of size: 4822060 bytes in 36.488s
+2025-05-04 23:48:51,151 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:48:51,156 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:48:51,159 - INFO - Preprocessing completed in 0.003s
+2025-05-04 23:48:51,175 - INFO - Tokenization completed in 0.015s
+2025-05-04 23:48:54,063 - INFO - Model inference completed in 2.887s
+2025-05-04 23:48:54,083 - INFO - Successfully generated audio of size: 129068 bytes in 7.701s
+2025-05-04 23:49:07,491 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:49:07,493 - INFO - Received request with text: 'It was a quiet morni...'
+2025-05-04 23:49:07,495 - INFO - Preprocessing completed in 0.003s
+2025-05-04 23:49:07,508 - INFO - Tokenization completed in 0.011s
+2025-05-04 23:49:07,514 - INFO - Long text detected, processing in chunks
+2025-05-04 23:49:46,656 - INFO - Model inference completed in 39.147s
+2025-05-04 23:49:46,676 - INFO - Successfully generated audio of size: 5021740 bytes in 41.587s
+2025-05-04 23:54:42,126 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:54:42,181 - INFO - Received request with text: 'It was a quiet morni...'
+2025-05-04 23:54:42,186 - INFO - Preprocessing completed in 0.004s
+2025-05-04 23:54:42,247 - INFO - Tokenization completed in 0.060s
+2025-05-04 23:54:42,251 - INFO - Long text detected, processing in chunks
+2025-05-04 23:54:58,137 - INFO - Model inference completed in 15.889s
+2025-05-04 23:54:58,150 - INFO - Successfully generated audio of size: 1571884 bytes in 21.447s
+2025-05-05 00:36:15,725 - INFO - Received request with text: 'it was a quiet morni...'
+2025-05-05 00:36:15,732 - INFO - Preprocessing completed in 0.004s
+2025-05-05 00:36:15,751 - INFO - Tokenization completed in 0.019s
+2025-05-05 00:36:15,756 - INFO - Long text detected, processing in chunks
+2025-05-05 00:36:41,770 - INFO - Model inference completed in 26.017s
+2025-05-05 00:36:41,815 - INFO - Successfully generated audio of size: 4494380 bytes in 27.673s
+2025-05-05 00:58:58,069 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 00:58:58,074 - INFO - Received request with text: 't was a quiet mornin...'
+2025-05-05 00:58:58,078 - INFO - Preprocessing completed in 0.003s
+2025-05-05 00:58:58,080 - INFO - Split text into 8 chunks for processing
+2025-05-05 00:58:58,081 - INFO - Processing chunk 1/8 with 288 chars
+2025-05-05 00:58:58,089 - INFO - Chunk 1 tokenized to 290 tokens in 0.009s
+2025-05-05 00:59:02,625 - INFO - Chunk 1 audio generated in 4.535s
+2025-05-05 00:59:02,639 - INFO - Processing chunk 2/8 with 297 chars
+2025-05-05 00:59:02,643 - INFO - Chunk 2 tokenized to 296 tokens in 0.004s
+2025-05-05 00:59:06,223 - INFO - Chunk 2 audio generated in 3.579s
+2025-05-05 00:59:06,229 - INFO - Processing chunk 3/8 with 299 chars
+2025-05-05 00:59:06,230 - INFO - Chunk 3 tokenized to 300 tokens in 0.001s
+2025-05-05 00:59:09,906 - INFO - Chunk 3 audio generated in 3.677s
+2025-05-05 00:59:09,913 - INFO - Processing chunk 4/8 with 273 chars
+2025-05-05 00:59:09,914 - INFO - Chunk 4 tokenized to 266 tokens in 0.001s
+2025-05-05 00:59:12,934 - INFO - Chunk 4 audio generated in 3.020s
+2025-05-05 00:59:12,939 - INFO - Processing chunk 5/8 with 249 chars
+2025-05-05 00:59:12,940 - INFO - Chunk 5 tokenized to 250 tokens in 0.001s
+2025-05-05 00:59:16,364 - INFO - Chunk 5 audio generated in 3.424s
+2025-05-05 00:59:16,370 - INFO - Processing chunk 6/8 with 286 chars
+2025-05-05 00:59:16,371 - INFO - Chunk 6 tokenized to 287 tokens in 0.001s
+2025-05-05 00:59:19,948 - INFO - Chunk 6 audio generated in 3.577s
+2025-05-05 00:59:19,955 - INFO - Processing chunk 7/8 with 278 chars
+2025-05-05 00:59:19,956 - INFO - Chunk 7 tokenized to 280 tokens in 0.001s
+2025-05-05 00:59:23,600 - INFO - Chunk 7 audio generated in 3.644s
+2025-05-05 00:59:23,605 - INFO - Processing chunk 8/8 with 254 chars
+2025-05-05 00:59:23,606 - INFO - Chunk 8 tokenized to 255 tokens in 0.001s
+2025-05-05 00:59:26,633 - INFO - Chunk 8 audio generated in 3.026s
+2025-05-05 00:59:26,644 - INFO - Combined 8 audio chunks into final audio of length 2610176
+2025-05-05 00:59:26,685 - INFO - Successfully generated audio of size: 5220396 bytes in 30.546s
+2025-05-05 01:14:19,784 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 01:14:19,804 - INFO - Received request with text: 't was a quiet mornin...'
+2025-05-05 01:14:19,810 - INFO - Preprocessing completed in 0.005s
+2025-05-05 01:14:19,811 - INFO - Split text into 8 chunks for processing
+2025-05-05 01:14:19,812 - INFO - Processing chunk 1/8 with 288 chars
+2025-05-05 01:14:19,838 - INFO - Chunk 1 tokenized to 290 tokens in 0.026s
+2025-05-05 01:14:25,519 - INFO - Chunk 1 audio generated in 5.681s
+2025-05-05 01:14:25,536 - INFO - Processing chunk 2/8 with 297 chars
+2025-05-05 01:14:25,537 - INFO - Chunk 2 tokenized to 296 tokens in 0.001s
+2025-05-05 01:14:29,527 - INFO - Chunk 2 audio generated in 3.989s
+2025-05-05 01:14:29,535 - INFO - Processing chunk 3/8 with 299 chars
+2025-05-05 01:14:29,536 - INFO - Chunk 3 tokenized to 300 tokens in 0.001s
+2025-05-05 01:14:33,494 - INFO - Chunk 3 audio generated in 3.957s
+2025-05-05 01:14:33,501 - INFO - Processing chunk 4/8 with 273 chars
+2025-05-05 01:14:33,502 - INFO - Chunk 4 tokenized to 266 tokens in 0.002s
+2025-05-05 01:14:36,821 - INFO - Chunk 4 audio generated in 3.318s
+2025-05-05 01:14:36,826 - INFO - Processing chunk 5/8 with 249 chars
+2025-05-05 01:14:36,827 - INFO - Chunk 5 tokenized to 250 tokens in 0.001s
+2025-05-05 01:14:39,521 - INFO - Chunk 5 audio generated in 2.694s
+2025-05-05 01:14:39,527 - INFO - Processing chunk 6/8 with 286 chars
+2025-05-05 01:14:39,528 - INFO - Chunk 6 tokenized to 287 tokens in 0.001s
+2025-05-05 01:14:43,903 - INFO - Chunk 6 audio generated in 4.374s
+2025-05-05 01:14:43,911 - INFO - Processing chunk 7/8 with 278 chars
+2025-05-05 01:14:43,913 - INFO - Chunk 7 tokenized to 280 tokens in 0.002s
+2025-05-05 01:14:47,625 - INFO - Chunk 7 audio generated in 3.712s
+2025-05-05 01:14:47,631 - INFO - Processing chunk 8/8 with 254 chars
+2025-05-05 01:14:47,632 - INFO - Chunk 8 tokenized to 255 tokens in 0.001s
+2025-05-05 01:14:50,536 - INFO - Chunk 8 audio generated in 2.905s
+2025-05-05 01:14:50,543 - INFO - Combined 8 audio chunks into final audio of length 2816000
+2025-05-05 01:14:50,584 - INFO - Successfully generated audio of size: 5632044 bytes in 35.824s
+2025-05-05 01:17:40,550 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 01:17:40,565 - INFO - Received request with text: 't was a quiet mornin...'
+2025-05-05 01:17:40,568 - INFO - Preprocessing completed in 0.002s
+2025-05-05 01:17:40,568 - INFO - Split text into 8 chunks for processing
+2025-05-05 01:17:40,569 - INFO - Processing chunk 1/8 with 288 chars
+2025-05-05 01:17:40,575 - INFO - Chunk 1 tokenized to 290 tokens in 0.007s
+2025-05-05 01:17:45,552 - INFO - Chunk 1 audio generated in 4.977s
+2025-05-05 01:17:45,566 - INFO - Processing chunk 2/8 with 297 chars
+2025-05-05 01:17:45,568 - INFO - Chunk 2 tokenized to 296 tokens in 0.001s
+2025-05-05 01:17:49,406 - INFO - Chunk 2 audio generated in 3.839s
+2025-05-05 01:17:49,414 - INFO - Processing chunk 3/8 with 299 chars
+2025-05-05 01:17:49,416 - INFO - Chunk 3 tokenized to 300 tokens in 0.001s
+2025-05-05 01:17:53,631 - INFO - Chunk 3 audio generated in 4.215s
+2025-05-05 01:17:53,641 - INFO - Processing chunk 4/8 with 273 chars
+2025-05-05 01:17:53,644 - INFO - Chunk 4 tokenized to 266 tokens in 0.003s
+2025-05-05 01:17:56,919 - INFO - Chunk 4 audio generated in 3.275s
+2025-05-05 01:17:56,922 - INFO - Processing chunk 5/8 with 249 chars
+2025-05-05 01:17:56,923 - INFO - Chunk 5 tokenized to 250 tokens in 0.000s
+2025-05-05 01:18:00,427 - INFO - Chunk 5 audio generated in 3.503s
+2025-05-05 01:18:00,434 - INFO - Processing chunk 6/8 with 286 chars
+2025-05-05 01:18:00,435 - INFO - Chunk 6 tokenized to 287 tokens in 0.001s
+2025-05-05 01:18:04,247 - INFO - Chunk 6 audio generated in 3.812s
+2025-05-05 01:18:04,254 - INFO - Processing chunk 7/8 with 278 chars
+2025-05-05 01:18:04,255 - INFO - Chunk 7 tokenized to 280 tokens in 0.001s
+2025-05-05 01:18:08,086 - INFO - Chunk 7 audio generated in 3.830s
+2025-05-05 01:18:08,093 - INFO - Processing chunk 8/8 with 254 chars
+2025-05-05 01:18:08,095 - INFO - Chunk 8 tokenized to 255 tokens in 0.001s
+2025-05-05 01:18:10,883 - INFO - Chunk 8 audio generated in 2.788s
+2025-05-05 01:18:10,896 - INFO - Combined 8 audio chunks into final audio of length 2701824
+2025-05-05 01:18:10,933 - INFO - Audio saved to generated_audio\Default_20250505_011810.wav
+2025-05-05 01:18:10,973 - INFO - Audio saved to generated_audio\Default_20250505_011810.wav
+2025-05-05 01:18:10,973 - INFO - Successfully generated audio of size: 5403692 bytes in 34.549s
