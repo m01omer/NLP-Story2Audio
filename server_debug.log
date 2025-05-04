@@ -6257,3 +6257,40 @@
 2025-05-03 16:43:40,029 - INFO - Tokenization completed in 0.092s
 2025-05-03 16:43:42,111 - INFO - Model inference completed in 2.082s
 2025-05-03 16:43:42,134 - INFO - Successfully generated audio of size: 128044 bytes in 7.693s
+2025-05-04 16:02:58,850 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 16:02:58,861 - INFO - Received request with text: 'OH MY GOD!!!!!, do y...'
+2025-05-04 16:02:58,864 - INFO - Preprocessing completed in 0.002s
+2025-05-04 16:02:58,877 - INFO - Tokenization completed in 0.012s
+2025-05-04 16:03:02,173 - INFO - Model inference completed in 3.295s
+2025-05-04 16:03:02,204 - INFO - Successfully generated audio of size: 96300 bytes in 8.908s
+2025-05-04 16:04:51,440 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 16:04:51,477 - INFO - Received request with text: 'The night was silent...'
+2025-05-04 16:04:51,478 - INFO - Preprocessing completed in 0.001s
+2025-05-04 16:04:51,536 - INFO - Tokenization completed in 0.058s
+2025-05-04 16:04:58,121 - INFO - Model inference completed in 6.583s
+2025-05-04 16:04:58,133 - INFO - Successfully generated audio of size: 473132 bytes in 12.989s
+2025-05-04 16:05:42,928 - INFO - Received request with text: 'The night was silent...'
+2025-05-04 16:05:42,928 - INFO - Preprocessing completed in 0.000s
+2025-05-04 16:05:42,930 - INFO - Tokenization completed in 0.003s
+2025-05-04 16:05:48,158 - INFO - Model inference completed in 5.227s
+2025-05-04 16:05:48,162 - INFO - Successfully generated audio of size: 395308 bytes in 10.405s
+2025-05-04 16:35:10,504 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 16:35:10,545 - INFO - Preprocessing completed in 0.016s
+2025-05-04 16:35:10,665 - INFO - Tokenization completed in 0.120s
+2025-05-04 16:35:14,656 - INFO - Model inference completed in 3.989s
+2025-05-04 16:35:14,703 - INFO - Successfully generated audio of size: 114732 bytes in 9.407s
+2025-05-04 16:38:25,887 - INFO - Received request with text: '60924120812038123091...'
+2025-05-04 16:38:25,889 - INFO - Preprocessing completed in 0.001s
+2025-05-04 16:38:25,909 - INFO - Tokenization completed in 0.020s
+2025-05-04 16:38:26,327 - INFO - Model inference completed in 0.417s
+2025-05-04 16:38:26,328 - INFO - Successfully generated audio of size: 11308 bytes in 1.264s
+2025-05-04 16:39:30,127 - INFO - Received request with text: 'my name &  his name ...'
+2025-05-04 16:39:30,130 - INFO - Preprocessing completed in 0.002s
+2025-05-04 16:39:30,135 - INFO - Tokenization completed in 0.005s
+2025-05-04 16:39:31,194 - INFO - Model inference completed in 1.058s
+2025-05-04 16:39:31,195 - INFO - Successfully generated audio of size: 60460 bytes in 1.884s
+2025-05-04 16:39:45,296 - INFO - Received request with text: 'my name  &  his name...'
+2025-05-04 16:39:45,297 - INFO - Preprocessing completed in 0.001s
+2025-05-04 16:39:45,300 - INFO - Tokenization completed in 0.003s
+2025-05-04 16:39:46,312 - INFO - Model inference completed in 1.010s
+2025-05-04 16:39:46,313 - INFO - Successfully generated audio of size: 60460 bytes in 1.825s

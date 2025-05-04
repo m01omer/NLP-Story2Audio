@@ -1,39 +1,43 @@
-# Build stage
-FROM python:3.12-slim as builder
+# Stage 1: Build stage
+FROM python:3.12-slim AS builder
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y build-essential
+# Install build dependencies and pip
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends build-essential curl && \
+    curl -sS https://bootstrap.pypa.io/get-pip.py | python3 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
 
-# Copy server code
-COPY server/ /app/
+# Copy requirements first and install
+COPY requirements.txt .
 
-# Copy generated files
+# Install dependencies with retry and timeout options
+RUN pip install --no-cache-dir --default-timeout=100 --resume-retries=5 -r requirements.txt
+
+# Copy server code and generated files
+COPY server/ /app/
 COPY generated/ /app/generated/
 
-# Copy requirements
-COPY requirements.txt /app/
-
-# Install Python dependencies
-RUN pip install --prefix=/install --no-cache-dir -r requirements.txt
-
-# Production stage
+# Stage 2: Final stage
 FROM python:3.12-slim
 
+# Set working directory
 WORKDIR /app
 
-# Copy installed packages
-COPY --from=builder /install /usr/local/
+# Copy installed dependencies from builder
+COPY --from=builder /usr/local/ /usr/local/
 
-# Copy application code
+# Copy application code and generated files
 COPY server/ /app/
 COPY generated/ /app/generated/
 
 # Set PYTHONPATH so 'generated' module is visible
 ENV PYTHONPATH=/app
 
+# Expose the port the server listens on
 EXPOSE 50051
 
 # Run the server
