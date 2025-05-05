@@ -1,38 +1,43 @@
 # version: '3.9'
 
 services:
-  server:
+  tts-server:
     build:
       context: .
-      dockerfile: server/dockerfile
-    image: project-server:Shark
-    container_name: Shark_server
+      dockerfile: server/DockerFile
+    image: project-server:latest
+    container_name: tts-server
     networks:
-      - nlpnet
-    expose:
-      - "50051"
+      - ttsnet
+    ports:
+      - "50051:50051"  # Expose port outside container too
     restart: unless-stopped
     volumes:
-      - ./server:/app  # Sync local 'server' folder to '/app' in container
+      - ./generated_audio:/app/generated_audio  # Persistent storage for audio
+      - ./model_cache:/root/.cache  # Cache downloaded models
+    environment:
+      - RUNNING_IN_DOCKER=true
 
-  ui:
+  streamlit-ui:
     build:
       context: .
       dockerfile: frontend/DockerFile
-    image: project-ui:Shark
-    container_name: client
+    image: project-ui:latest
+    container_name: tts-ui
     ports:
       - "8501:8501"
     depends_on:
-      - server
+      - tts-server
     networks:
-      - nlpnet
+      - ttsnet
     environment:
-      - GRPC_ADDRESS=grpc_server:50051
+      - TTS_SERVER_HOST=tts-server
+      - TTS_SERVER_PORT=50051
+      - RUNNING_IN_DOCKER=true
     restart: unless-stopped
     volumes:
-      - ./frontend:/app  # Sync local 'frontend' folder to '/app' in container
+      - ./generated_audio:/app/generated_audio  # Share audio with server
 
 networks:
-  nlpnet:
+  ttsnet:
     driver: bridge

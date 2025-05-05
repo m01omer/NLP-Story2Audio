@@ -6788,3 +6788,233 @@ KeyboardInterrupt
 2025-05-05 03:54:39,447 - INFO - Audio saved to generated_audio\Default_20250505_035439.wav
 2025-05-05 03:54:39,447 - INFO - Audio size: 0.04 MB
 2025-05-05 03:54:39,448 - INFO - Successfully generated audio of size: 42028 bytes in 2.356s
+2025-05-05 16:33:06,478 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-05 16:47:54,139 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 16:47:54,197 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 16:47:54,211 - INFO - Preprocessing completed in 0.015s
+2025-05-05 16:47:54,213 - INFO - Split text into 1 chunks for processing
+2025-05-05 16:47:54,214 - INFO - Processing chunk 1/1 with 51 chars
+2025-05-05 16:47:54,292 - INFO - Chunk 1 tokenized to 53 tokens in 0.078s
+2025-05-05 16:47:58,065 - INFO - Chunk 1 audio generated in 3.773s
+2025-05-05 16:47:58,084 - INFO - Combined 1 audio chunks into final audio of length 63488
+2025-05-05 16:47:58,166 - INFO - Audio saved to generated_audio\Default_20250505_164758.wav
+2025-05-05 16:47:58,172 - INFO - Audio size: 0.12 MB
+2025-05-05 16:47:58,173 - INFO - Successfully generated audio of size: 127020 bytes in 9.438s
+2025-05-05 16:55:11,579 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 16:55:11,604 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 16:55:11,611 - INFO - Preprocessing completed in 0.007s
+2025-05-05 16:55:11,613 - INFO - Split text into 1 chunks for processing
+2025-05-05 16:55:11,614 - INFO - Processing chunk 1/1 with 51 chars
+2025-05-05 16:55:11,644 - INFO - Chunk 1 tokenized to 53 tokens in 0.031s
+2025-05-05 16:55:14,322 - INFO - Chunk 1 audio generated in 2.678s
+2025-05-05 16:55:14,336 - INFO - Combined 1 audio chunks into final audio of length 64000
+2025-05-05 16:55:14,369 - INFO - Audio saved to generated_audio\Default_20250505_165514.wav
+2025-05-05 16:55:14,372 - INFO - Audio size: 0.12 MB
+2025-05-05 16:55:14,372 - INFO - Successfully generated audio of size: 128044 bytes in 8.407s
+2025-05-05 17:04:02,241 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 17:04:02,293 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 17:04:02,295 - INFO - Preprocessing completed in 0.003s
+2025-05-05 17:04:02,296 - INFO - Split text into 1 chunks for processing
+2025-05-05 17:04:02,296 - INFO - Processing chunk 1/1 with 51 chars
+2025-05-05 17:04:02,366 - INFO - Chunk 1 tokenized to 53 tokens in 0.069s
+2025-05-05 17:04:03,992 - INFO - Chunk 1 audio generated in 1.626s
+2025-05-05 17:04:03,998 - INFO - Combined 1 audio chunks into final audio of length 67072
+2025-05-05 17:04:04,012 - INFO - Audio saved to generated_audio\Default_20250505_170403.wav
+2025-05-05 17:04:04,018 - INFO - Audio size: 0.13 MB
+2025-05-05 17:04:04,019 - INFO - Successfully generated audio of size: 134188 bytes in 6.430s
+2025-05-05 17:04:17,066 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 17:04:17,066 - INFO - Preprocessing completed in 0.000s
+2025-05-05 17:04:17,066 - INFO - Split text into 1 chunks for processing
+2025-05-05 17:04:17,067 - INFO - Processing chunk 1/1 with 51 chars
+2025-05-05 17:04:17,068 - INFO - Chunk 1 tokenized to 53 tokens in 0.001s
+2025-05-05 17:04:18,789 - INFO - Chunk 1 audio generated in 1.721s
+2025-05-05 17:04:18,792 - INFO - Combined 1 audio chunks into final audio of length 56320
+2025-05-05 17:04:18,797 - INFO - Audio saved to generated_audio\cmu_us_rms_arctic-wav-arctic_b0353_20250505_170418.wav
+2025-05-05 17:04:18,798 - INFO - Audio size: 0.11 MB
+2025-05-05 17:04:18,798 - INFO - Successfully generated audio of size: 112684 bytes in 5.654s
+2025-05-05 17:04:32,582 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 17:04:32,583 - INFO - Preprocessing completed in 0.000s
+2025-05-05 17:04:32,583 - INFO - Split text into 1 chunks for processing
+2025-05-05 17:04:32,583 - INFO - Processing chunk 1/1 with 51 chars
+2025-05-05 17:04:32,587 - INFO - Chunk 1 tokenized to 53 tokens in 0.004s
+2025-05-05 17:04:34,042 - INFO - Chunk 1 audio generated in 1.453s
+2025-05-05 17:04:34,044 - INFO - Combined 1 audio chunks into final audio of length 52736
+2025-05-05 17:04:34,047 - INFO - Audio saved to generated_audio\cmu_us_slt_arctic-wav-arctic_a0508_20250505_170434.wav
+2025-05-05 17:04:34,049 - INFO - Audio size: 0.10 MB
+2025-05-05 17:04:34,049 - INFO - Successfully generated audio of size: 105516 bytes in 5.902s
+2025-05-05 22:33:16,915 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 22:33:17,011 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 22:33:17,043 - INFO - Preprocessing completed in 0.032s
+2025-05-05 22:33:17,046 - INFO - Split text into 1 chunks for processing
+2025-05-05 22:33:17,047 - INFO - Processing chunk 1/1 with 51 chars
+2025-05-05 22:33:17,182 - INFO - Chunk 1 tokenized to 53 tokens in 0.134s
+2025-05-05 22:33:21,419 - INFO - Chunk 1 audio generated in 4.237s
+2025-05-05 22:33:21,440 - INFO - Combined 1 audio chunks into final audio of length 64000
+2025-05-05 22:33:21,521 - INFO - Audio saved to generated_audio\Default_20250505_223321.wav
+2025-05-05 22:33:21,527 - INFO - Audio size: 0.12 MB
+2025-05-05 22:33:21,527 - INFO - Successfully generated audio of size: 128044 bytes in 10.038s
+2025-05-05 23:08:35,285 - WARNING - Speaker 'A gentle elderly voice with warmth.' not found, using default.
+2025-05-05 23:08:35,949 - INFO - Received request with text: 'Life is what happens...'
+2025-05-05 23:08:35,950 - INFO - Preprocessing completed in 0.001s
+2025-05-05 23:08:35,951 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:08:35,951 - INFO - Processing chunk 1/1 with 57 chars
+2025-05-05 23:08:36,625 - INFO - Chunk 1 tokenized to 59 tokens in 0.674s
+2025-05-05 23:08:41,511 - INFO - Chunk 1 audio generated in 4.886s
+2025-05-05 23:08:41,516 - INFO - Combined 1 audio chunks into final audio of length 70656
+2025-05-05 23:08:41,530 - INFO - Audio saved to generated_audio\A_gentle_elderly_voice_with_warmth_20250505_230841.wav
+2025-05-05 23:08:41,531 - INFO - Audio size: 0.13 MB
+2025-05-05 23:08:41,531 - INFO - Successfully generated audio of size: 141356 bytes in 8.595s
+2025-05-05 23:08:43,194 - WARNING - Speaker 'A professional news anchor voice.' not found, using default.
+2025-05-05 23:08:43,195 - INFO - Received request with text: 'The only way to do g...'
+2025-05-05 23:08:43,195 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:08:43,196 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:08:43,196 - INFO - Processing chunk 1/1 with 53 chars
+2025-05-05 23:08:43,196 - INFO - Chunk 1 tokenized to 55 tokens in 0.000s
+2025-05-05 23:08:44,010 - INFO - Chunk 1 audio generated in 0.814s
+2025-05-05 23:08:44,012 - INFO - Combined 1 audio chunks into final audio of length 61952
+2025-05-05 23:08:44,015 - INFO - Audio saved to generated_audio\A_professional_news_anchor_voice_20250505_230844.wav
+2025-05-05 23:08:44,016 - INFO - Audio size: 0.12 MB
+2025-05-05 23:08:44,016 - INFO - Successfully generated audio of size: 123948 bytes in 2.475s
+2025-05-05 23:08:45,858 - WARNING - Speaker 'A friendly female voice speaking clearly and calmly.' not found, using default.
+2025-05-05 23:08:45,859 - INFO - Received request with text: 'The quick brown fox ...'
+2025-05-05 23:08:45,860 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:08:45,860 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:08:45,860 - INFO - Processing chunk 1/1 with 44 chars
+2025-05-05 23:08:45,861 - INFO - Chunk 1 tokenized to 46 tokens in 0.001s
+2025-05-05 23:08:46,881 - INFO - Chunk 1 audio generated in 1.019s
+2025-05-05 23:08:46,884 - INFO - Combined 1 audio chunks into final audio of length 59904
+2025-05-05 23:08:46,886 - INFO - Audio saved to generated_audio\A_friendly_female_voice_speaking_clearly_and_calmly_20250505_230846.wav
+2025-05-05 23:08:46,888 - INFO - Audio size: 0.11 MB
+2025-05-05 23:08:46,888 - INFO - Successfully generated audio of size: 119852 bytes in 2.868s
+2025-05-05 23:08:48,810 - WARNING - Speaker 'A gentle elderly voice with warmth.' not found, using default.
+2025-05-05 23:08:48,811 - INFO - Received request with text: 'The only way to do g...'
+2025-05-05 23:08:48,811 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:08:48,812 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:08:48,812 - INFO - Processing chunk 1/1 with 53 chars
+2025-05-05 23:08:48,813 - INFO - Chunk 1 tokenized to 55 tokens in 0.001s
+2025-05-05 23:08:49,616 - INFO - Chunk 1 audio generated in 0.803s
+2025-05-05 23:08:49,619 - INFO - Combined 1 audio chunks into final audio of length 65024
+2025-05-05 23:08:49,623 - INFO - Audio saved to generated_audio\A_gentle_elderly_voice_with_warmth_20250505_230849.wav
+2025-05-05 23:08:49,624 - INFO - Audio size: 0.12 MB
+2025-05-05 23:08:49,624 - INFO - Successfully generated audio of size: 130092 bytes in 2.731s
+2025-05-05 23:08:51,532 - WARNING - Speaker 'A gentle elderly voice with warmth.' not found, using default.
+2025-05-05 23:08:51,533 - INFO - Received request with text: 'The quick brown fox ...'
+2025-05-05 23:08:51,533 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:08:51,533 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:08:51,533 - INFO - Processing chunk 1/1 with 44 chars
+2025-05-05 23:08:51,534 - INFO - Chunk 1 tokenized to 46 tokens in 0.001s
+2025-05-05 23:08:52,256 - INFO - Chunk 1 audio generated in 0.721s
+2025-05-05 23:08:52,259 - INFO - Combined 1 audio chunks into final audio of length 56832
+2025-05-05 23:08:52,262 - INFO - Audio saved to generated_audio\A_gentle_elderly_voice_with_warmth_20250505_230852.wav
+2025-05-05 23:08:52,263 - INFO - Audio size: 0.11 MB
+2025-05-05 23:08:52,263 - INFO - Successfully generated audio of size: 113708 bytes in 2.634s
+2025-05-05 23:08:53,974 - WARNING - Speaker 'A gentle elderly voice with warmth.' not found, using default.
+2025-05-05 23:08:53,975 - INFO - Received request with text: 'This is a short test...'
+2025-05-05 23:08:53,975 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:08:53,976 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:08:53,976 - INFO - Processing chunk 1/1 with 21 chars
+2025-05-05 23:08:53,977 - INFO - Chunk 1 tokenized to 23 tokens in 0.001s
+2025-05-05 23:08:54,366 - INFO - Chunk 1 audio generated in 0.389s
+2025-05-05 23:08:54,368 - INFO - Combined 1 audio chunks into final audio of length 30208
+2025-05-05 23:08:54,371 - INFO - Audio saved to generated_audio\A_gentle_elderly_voice_with_warmth_20250505_230854.wav
+2025-05-05 23:08:54,372 - INFO - Audio size: 0.06 MB
+2025-05-05 23:08:54,372 - INFO - Successfully generated audio of size: 60460 bytes in 2.105s
+2025-05-05 23:08:55,943 - WARNING - Speaker 'A friendly female voice speaking clearly and calmly.' not found, using default.
+2025-05-05 23:08:55,944 - INFO - Received request with text: 'In the midst of wint...'
+2025-05-05 23:08:55,944 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:08:55,944 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:08:55,945 - INFO - Processing chunk 1/1 with 75 chars
+2025-05-05 23:08:55,946 - INFO - Chunk 1 tokenized to 77 tokens in 0.001s
+2025-05-05 23:08:57,068 - INFO - Chunk 1 audio generated in 1.122s
+2025-05-05 23:08:57,072 - INFO - Combined 1 audio chunks into final audio of length 100864
+2025-05-05 23:08:57,075 - INFO - Audio saved to generated_audio\A_friendly_female_voice_speaking_clearly_and_calmly_20250505_230857.wav
+2025-05-05 23:08:57,076 - INFO - Audio size: 0.19 MB
+2025-05-05 23:08:57,076 - INFO - Successfully generated audio of size: 201772 bytes in 2.699s
+2025-05-05 23:08:58,643 - WARNING - Speaker 'A cheerful child's voice.' not found, using default.
+2025-05-05 23:08:58,644 - INFO - Received request with text: 'Testing concurrent a...'
+2025-05-05 23:08:58,644 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:08:58,644 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:08:58,645 - INFO - Processing chunk 1/1 with 86 chars
+2025-05-05 23:08:58,646 - INFO - Chunk 1 tokenized to 88 tokens in 0.001s
+2025-05-05 23:09:00,068 - INFO - Chunk 1 audio generated in 1.422s
+2025-05-05 23:09:00,074 - INFO - Combined 1 audio chunks into final audio of length 112128
+2025-05-05 23:09:00,087 - INFO - Audio saved to generated_audio\A_cheerful_childs_voice_20250505_230900.wav
+2025-05-05 23:09:00,088 - INFO - Audio size: 0.21 MB
+2025-05-05 23:09:00,088 - INFO - Successfully generated audio of size: 224300 bytes in 3.006s
+2025-05-05 23:09:01,644 - WARNING - Speaker 'A friendly female voice speaking clearly and calmly.' not found, using default.
+2025-05-05 23:09:01,645 - INFO - Received request with text: 'Artificial intellige...'
+2025-05-05 23:09:01,645 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:09:01,646 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:09:01,646 - INFO - Processing chunk 1/1 with 91 chars
+2025-05-05 23:09:01,647 - INFO - Chunk 1 tokenized to 93 tokens in 0.001s
+2025-05-05 23:09:03,107 - INFO - Chunk 1 audio generated in 1.460s
+2025-05-05 23:09:03,111 - INFO - Combined 1 audio chunks into final audio of length 129024
+2025-05-05 23:09:03,116 - INFO - Audio saved to generated_audio\A_friendly_female_voice_speaking_clearly_and_calmly_20250505_230903.wav
+2025-05-05 23:09:03,117 - INFO - Audio size: 0.25 MB
+2025-05-05 23:09:03,117 - INFO - Successfully generated audio of size: 258092 bytes in 3.018s
+2025-05-05 23:09:04,654 - WARNING - Speaker 'A gentle elderly voice with warmth.' not found, using default.
+2025-05-05 23:09:04,654 - INFO - Received request with text: 'Artificial intellige...'
+2025-05-05 23:09:04,654 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:09:04,655 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:09:04,655 - INFO - Processing chunk 1/1 with 91 chars
+2025-05-05 23:09:04,656 - INFO - Chunk 1 tokenized to 93 tokens in 0.001s
+2025-05-05 23:09:06,150 - INFO - Chunk 1 audio generated in 1.494s
+2025-05-05 23:09:06,153 - INFO - Combined 1 audio chunks into final audio of length 139776
+2025-05-05 23:09:06,155 - INFO - Audio saved to generated_audio\A_gentle_elderly_voice_with_warmth_20250505_230906.wav
+2025-05-05 23:09:06,156 - INFO - Audio size: 0.27 MB
+2025-05-05 23:09:06,157 - INFO - Successfully generated audio of size: 279596 bytes in 3.036s
+2025-05-05 23:09:07,712 - WARNING - Speaker 'A friendly female voice speaking clearly and calmly.' not found, using default.
+2025-05-05 23:09:07,713 - INFO - Received request with text: 'The quick brown fox ...'
+2025-05-05 23:09:07,713 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:09:07,713 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:09:07,713 - INFO - Processing chunk 1/1 with 44 chars
+2025-05-05 23:09:07,714 - INFO - Chunk 1 tokenized to 46 tokens in 0.001s
+2025-05-05 23:09:08,517 - INFO - Chunk 1 audio generated in 0.802s
+2025-05-05 23:09:08,522 - INFO - Combined 1 audio chunks into final audio of length 55296
+2025-05-05 23:09:08,526 - INFO - Audio saved to generated_audio\A_friendly_female_voice_speaking_clearly_and_calmly_20250505_230908.wav
+2025-05-05 23:09:08,528 - INFO - Audio size: 0.11 MB
+2025-05-05 23:09:08,528 - INFO - Successfully generated audio of size: 110636 bytes in 2.367s
+2025-05-05 23:09:10,545 - WARNING - Speaker 'A gentle elderly voice with warmth.' not found, using default.
+2025-05-05 23:09:10,546 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 23:09:10,547 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:09:10,547 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:09:10,547 - INFO - Processing chunk 1/1 with 73 chars
+2025-05-05 23:09:10,548 - INFO - Chunk 1 tokenized to 75 tokens in 0.001s
+2025-05-05 23:09:11,693 - INFO - Chunk 1 audio generated in 1.145s
+2025-05-05 23:09:11,695 - INFO - Combined 1 audio chunks into final audio of length 91648
+2025-05-05 23:09:11,699 - INFO - Audio saved to generated_audio\A_gentle_elderly_voice_with_warmth_20250505_230911.wav
+2025-05-05 23:09:11,700 - INFO - Audio size: 0.17 MB
+2025-05-05 23:09:11,700 - INFO - Successfully generated audio of size: 183340 bytes in 3.166s
+2025-05-05 23:09:13,623 - WARNING - Speaker 'A deep male voice with authority.' not found, using default.
+2025-05-05 23:09:13,625 - INFO - Received request with text: 'The only way to do g...'
+2025-05-05 23:09:13,625 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:09:13,625 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:09:13,625 - INFO - Processing chunk 1/1 with 53 chars
+2025-05-05 23:09:13,628 - INFO - Chunk 1 tokenized to 55 tokens in 0.002s
+2025-05-05 23:09:14,568 - INFO - Chunk 1 audio generated in 0.940s
+2025-05-05 23:09:14,570 - INFO - Combined 1 audio chunks into final audio of length 65024
+2025-05-05 23:09:14,572 - INFO - Audio saved to generated_audio\A_deep_male_voice_with_authority_20250505_230914.wav
+2025-05-05 23:09:14,572 - INFO - Audio size: 0.12 MB
+2025-05-05 23:09:14,573 - INFO - Successfully generated audio of size: 130092 bytes in 2.869s
+2025-05-05 23:09:16,578 - WARNING - Speaker 'A cheerful child's voice.' not found, using default.
+2025-05-05 23:09:16,579 - INFO - Received request with text: 'This is a short test...'
+2025-05-05 23:09:16,579 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:09:16,580 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:09:16,580 - INFO - Processing chunk 1/1 with 21 chars
+2025-05-05 23:09:16,581 - INFO - Chunk 1 tokenized to 23 tokens in 0.001s
+2025-05-05 23:09:16,918 - INFO - Chunk 1 audio generated in 0.337s
+2025-05-05 23:09:16,920 - INFO - Combined 1 audio chunks into final audio of length 24064
+2025-05-05 23:09:16,923 - INFO - Audio saved to generated_audio\A_cheerful_childs_voice_20250505_230916.wav
+2025-05-05 23:09:16,924 - INFO - Audio size: 0.05 MB
+2025-05-05 23:09:16,924 - INFO - Successfully generated audio of size: 48172 bytes in 2.347s
+2025-05-05 23:09:18,857 - WARNING - Speaker 'A cheerful child's voice.' not found, using default.
+2025-05-05 23:09:18,858 - INFO - Received request with text: 'In the midst of wint...'
+2025-05-05 23:09:18,858 - INFO - Preprocessing completed in 0.000s
+2025-05-05 23:09:18,858 - INFO - Split text into 1 chunks for processing
+2025-05-05 23:09:18,858 - INFO - Processing chunk 1/1 with 75 chars
+2025-05-05 23:09:18,860 - INFO - Chunk 1 tokenized to 77 tokens in 0.002s
+2025-05-05 23:09:20,278 - INFO - Chunk 1 audio generated in 1.418s
+2025-05-05 23:09:20,281 - INFO - Combined 1 audio chunks into final audio of length 93696
+2025-05-05 23:09:20,285 - INFO - Audio saved to generated_audio\A_cheerful_childs_voice_20250505_230920.wav
+2025-05-05 23:09:20,286 - INFO - Audio size: 0.18 MB
+2025-05-05 23:09:20,286 - INFO - Successfully generated audio of size: 187436 bytes in 3.355s

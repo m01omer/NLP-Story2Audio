@@ -166,8 +166,8 @@ apply_custom_css()
 # Intro screen
 if 'loaded' not in st.session_state:
     st.session_state.loaded = False
-    lottie_intro = load_lottiefile(r"frontend\animations\welcome.json")
-    st_lottie(lottie_intro, height=800)
+    #lottie_intro = load_lottiefile(r"frontend/animationswelcome.json")
+    #st_lottie(lottie_intro, height=800)
     st.markdown("""
         <script>
             window.scrollTo({
@@ -374,7 +374,12 @@ with tab1:
                     text = preset
         
         # Text area
-        text = st.text_area("", "Hello, this is a test of the text to speech system.", height=200)
+        text = st.text_area(
+        "Input Text", 
+        "Hello, this is a test of the text to speech system.", 
+        height=200,
+        label_visibility="collapsed"  # This hides the label visually but keeps it for screen readers
+    )
         char_count = len(text)
         st.markdown(f"<div class='char-counter'>{char_count} characters</div>", unsafe_allow_html=True)
         
@@ -413,8 +418,8 @@ with tab1:
         generate_button = st.button("🔊 Generate Speech", use_container_width=True)
     
     with col2:
-        lottie_voice = load_lottiefile(r"frontend\animations\voice2.json")
-        st_lottie(lottie_voice, speed=1, height=250, key="voice")
+        #lottie_voice = load_lottiefile(r"frontend\animations\voice2.json")
+        # st_lottie(lottie_voice, speed=1, height=250, key="voice")
         
         st.markdown(f"### Voice Preview: {voice_label}")
         st.markdown(f"*{speaker_map[voice_label]['description']}*")
@@ -446,8 +451,9 @@ with tab1:
                 
                 # Show animation during generation
                 with placeholder.container():
-                    lottie_speak = load_lottiefile("frontend/animations/speak.json")
-                    st_lottie(lottie_speak, key="lottie_spinner")
+                    # lottie_speak = load_lottiefile("frontend/animations/speak.json")
+                   # st_lottie(lottie_speak, key="lottie_spinner")
+                    st.spinner("Generating speech...")
                 
                 try:
                     channel_options = [

@@ -1,0 +1,16 @@
+{
+  "total_execution_time": 47.400222301483154,
+  "total_requests": 15,
+  "successful_requests": 15,
+  "failed_requests": 0,
+  "success_rate": 100.0,
+  "throughput": 0.3164542120624327,
+  "requests_per_second": 0.3870621425402437,
+  "avg_response_time": 3.1586944103240966,
+  "min_response_time": 2.1078145503997803,
+  "max_response_time": 8.645755767822266,
+  "p50_response_time": 2.8716070652008057,
+  "p90_response_time": 3.2846545696258542,
+  "p95_response_time": 4.946050095558161,
+  "p99_response_time": 7.905814633369443
+}

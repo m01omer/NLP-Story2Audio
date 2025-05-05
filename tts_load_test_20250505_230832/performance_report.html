@@ -1,0 +1,161 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>TTS Load Test Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 0; padding: 20px; color: #333; }
+                .container { max-width: 1200px; margin: 0 auto; }
+                h1, h2, h3 { color: #2c3e50; }
+                .metric-card { background: #f9f9f9; border-radius: 5px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+                .metric-row { display: flex; flex-wrap: wrap; margin: 0 -10px; }
+                .metric-box { flex: 1; min-width: 200px; margin: 10px; background: white; padding: 15px; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+                .metric-value { font-size: 24px; font-weight: bold; color: #3498db; margin-bottom: 5px; }
+                .metric-label { font-size: 14px; color: #7f8c8d; }
+                .graphs { margin-top: 30px; }
+                .graph-container { margin-bottom: 30px; background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+                .graph-title { font-size: 18px; margin-bottom: 15px; }
+                img { max-width: 100%; height: auto; }
+                table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+                table, th, td { border: 1px solid #ddd; }
+                th, td { padding: 12px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                tr:nth-child(even) { background-color: #f9f9f9; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>TTS Load Test Performance Report</h1>
+                <p><strong>Date:</strong> 2025-05-05 23:09:24</p>
+                <p><strong>Server:</strong> localhost:50051</p>
+                <p><strong>Configuration:</strong> 5 clients, 3 requests per client</p>
+                
+                <h2>Performance Summary</h2>
+                <div class="metric-card">
+                    <div class="metric-row">
+                        <div class="metric-box">
+                            <div class="metric-value">15</div>
+                            <div class="metric-label">Total Requests</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">100.00%</div>
+                            <div class="metric-label">Success Rate</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">0.32</div>
+                            <div class="metric-label">Requests/Second</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">47.40s</div>
+                            <div class="metric-label">Total Duration</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>Response Time Metrics</h2>
+                <div class="metric-card">
+                    <div class="metric-row">
+                        <div class="metric-box">
+                            <div class="metric-value">3.16s</div>
+                            <div class="metric-label">Average Response Time</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">2.11s</div>
+                            <div class="metric-label">Minimum Response Time</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">8.65s</div>
+                            <div class="metric-label">Maximum Response Time</div>
+                        </div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-box">
+                            <div class="metric-value">2.87s</div>
+                            <div class="metric-label">P50 (Median) Response Time</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">3.28s</div>
+                            <div class="metric-label">P90 Response Time</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">4.95s</div>
+                            <div class="metric-label">P95 Response Time</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">7.91s</div>
+                            <div class="metric-label">P99 Response Time</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>Performance Graphs</h2>
+                <div class="graphs">
+                    <div class="graph-container">
+                        <div class="graph-title">Response Time Distribution</div>
+                        <img src="response_time_distribution.png" alt="Response Time Distribution">
+                    </div>
+                    
+                    <div class="graph-container">
+                        <div class="graph-title">Response Time Over Test Duration</div>
+                        <img src="response_time_over_time.png" alt="Response Time Over Test Duration">
+                    </div>
+                    
+                    <div class="graph-container">
+                        <div class="graph-title">Success vs Failure</div>
+                        <img src="success_failure_pie.png" alt="Success vs Failure">
+                    </div>
+                    
+                    <div class="graph-container">
+                        <div class="graph-title">Average Response Time by Client</div>
+                        <img src="response_time_by_client.png" alt="Response Time by Client">
+                    </div>
+                    
+                    <div class="graph-container">
+                        <div class="graph-title">Response Time vs Text Length</div>
+                        <img src="response_time_vs_text_length.png" alt="Response Time vs Text Length">
+                    </div>
+                    
+                    <div class="graph-container">
+                        <div class="graph-title">Audio Size Distribution</div>
+                        <img src="audio_size_distribution.png" alt="Audio Size Distribution">
+                    </div>
+                    
+                    <div class="graph-container">
+                        <div class="graph-title">Concurrent Requests Over Time</div>
+                        <img src="concurrent_requests.png" alt="Concurrent Requests Over Time">
+                    </div>
+                </div>
+                
+                <h2>Test Configuration</h2>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Server Address</td>
+                        <td>localhost:50051</td>
+                    </tr>
+                    <tr>
+                        <td>Number of Clients</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Requests per Client</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Delay Range</td>
+                        <td>0.5s - 2.0s</td>
+                    </tr>
+                    <tr>
+                        <td>Total Requests</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+            </div>
+        </body>
+        </html>
+        
