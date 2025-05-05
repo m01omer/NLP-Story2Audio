@@ -177,7 +177,7 @@ if 'loaded' not in st.session_state:
             });
         </script>
     """, unsafe_allow_html=True)
-    st.markdown("<h2 style='text-align:center;'>Welcome to the Text-to-Speech Demo! 🎙️</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align:center;'>Welcome to Story Narrator</h2>", unsafe_allow_html=True)
     with st.spinner("Loading app..."):
         time.sleep(3)
     st.session_state.loaded = True
@@ -187,7 +187,7 @@ if 'loaded' not in st.session_state:
 st.markdown(
     """
     <div style='text-align: center; padding: 10px 0 20px 0;'>
-        <h1>✨ Text to Speech Converter ✨</h1>
+        <h1>✨ Story Narrator ✨</h1>
         <p>Transform your written words into natural-sounding speech</p>
     </div>
     """, 
@@ -283,9 +283,16 @@ ENV VARS: {'Set' if server_host_env else 'Not set'}
         if st.button("Test Connection"):
             with st.status("Testing connection..."):
                 try:
-                    channel = grpc.insecure_channel(server_address)
+                    channel = grpc.insecure_channel(
+                        server_address,
+                        options=[
+                            ("grpc.max_receive_message_length", 100 * 1024 * 1024),  # 100 MB
+                            ("grpc.max_send_message_length", 100 * 1024 * 1024)       # 100 MB
+                        ]
+                    )
+
                     try:
-                        grpc.channel_ready_future(channel).result(timeout=3)
+                        grpc.channel_ready_future(channel).result(timeout=10)
                         st.success(f"✅ Connected to {server_address}!")
                         channel.close()
                     except grpc.FutureTimeoutError:
@@ -443,58 +450,68 @@ with tab1:
                     st_lottie(lottie_speak, key="lottie_spinner")
                 
                 try:
-                    channel = grpc.insecure_channel(server_address)
-                    timeout = 10 if in_docker else 5
+                    channel_options = [
+                        ("grpc.max_receive_message_length", 16 * 1024 * 1024),
+                        ("grpc.max_send_message_length", 16 * 1024 * 1024),
+                        ("grpc.max_metadata_size", 16 * 1024 * 1024),             # 16MB
+                        ("grpc.http2.max_frame_size", 16 * 1024 * 1024)           # 16MB
+                    ]
+                    channel = grpc.insecure_channel(server_address, options=channel_options)
+                    timeout = 50 if in_docker else 50
                     grpc.channel_ready_future(channel).result(timeout=timeout)
                     stub = tts_service_pb2_grpc.TTSStub(channel)
                     
                     # Create request with advanced parameters - use actual_speed from simplified control
                     request = tts_service_pb2.TextRequest(
                         text=text, 
-                        description=voice_id,
-                        speed=actual_speed if simplified_speed != "Normal" else st.session_state.speed,
-                        pitch=st.session_state.pitch,
-                        emphasis=st.session_state.emphasis
+                        description=voice_id
                     )
                     
                     start_time = time.time()
-                    response = stub.GenerateSpeech(request, timeout=60)
+                    response = stub.GenerateSpeech(request, timeout=1000)
                     generation_time = time.time() - start_time
                     
                     if response and response.audio:
-                        audio_file = f"audio_{uuid.uuid4().hex[:8]}.wav"
-                        with open(audio_file, "wb") as f:
+                        # Ensure the audio is saved fully before using it
+                        audio_filename = f"audio_{uuid.uuid4().hex[:8]}.wav"
+                        audio_path = os.path.join("generated_audio", audio_filename)
+
+                        # Make sure directory exists
+                        os.makedirs("generated_audio", exist_ok=True)
+
+                        # Save audio safely
+                        with open(audio_path, "wb") as f:
                             f.write(response.audio)
-                        
+
                         placeholder.empty()  # remove the loader
                         st.success(f"✅ Generated in {generation_time:.1f} seconds!")
-                        
-                        # Create custom audio player
-                        st.audio(audio_file, format="audio/wav")
-                        
-                        # Download and Share options
+
+                        # Use file path (not bytes) for large files
+                        st.audio(audio_path, format="audio/wav")
+
+                        # Provide download button using reopened file
                         col1, col2 = st.columns(2)
                         with col1:
-                            with open(audio_file, "rb") as f:
+                            with open(audio_path, "rb") as f:
                                 st.download_button("⬇️ Download audio", f, file_name="tts_output.wav", mime="audio/wav")
                         with col2:
                             if st.button("📋 Copy Text", key="copy_text"):
                                 st.success("Text copied to clipboard!")
-                        
+
                         # Add to history
                         now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                         st.session_state.history.append({
                             "text": text,
                             "voice": voice_label,
                             "timestamp": now,
-                            "file": audio_file,
+                            "file": audio_path,
                             "settings": {
                                 "speed": st.session_state.speed if simplified_speed == "Normal" else actual_speed,
                                 "pitch": st.session_state.pitch,
                                 "emphasis": st.session_state.emphasis
                             }
                         })
-                        
+    
                     else:
                         placeholder.empty()
                         st.error("Received empty response from server.")
@@ -618,7 +635,7 @@ with tab3:
 st.divider()
 footer_col1, footer_col2, footer_col3 = st.columns(3)
 with footer_col1:
-    st.markdown("Made with ❤️ and Streamlit")
+    st.markdown("Story Teller | Text to Speech | TTS")
 with footer_col2:
     if in_docker:
         st.caption("TTS Demo Application (Docker Environment)")

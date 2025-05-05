@@ -1,10 +1,10 @@
-#version: '3.9'
+# version: '3.9'
 
 services:
   server:
     build:
       context: .
-      dockerfile: server/DockerFile
+      dockerfile: server/dockerfile
     image: project-server:Shark
     container_name: Shark_server
     networks:
@@ -12,6 +12,8 @@ services:
     expose:
       - "50051"
     restart: unless-stopped
+    volumes:
+      - ./server:/app  # Sync local 'server' folder to '/app' in container
 
   ui:
     build:
@@ -28,6 +30,8 @@ services:
     environment:
       - GRPC_ADDRESS=grpc_server:50051
     restart: unless-stopped
+    volumes:
+      - ./frontend:/app  # Sync local 'frontend' folder to '/app' in container
 
 networks:
   nlpnet:

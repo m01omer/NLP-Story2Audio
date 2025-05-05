@@ -6294,3 +6294,497 @@
 2025-05-04 16:39:45,300 - INFO - Tokenization completed in 0.003s
 2025-05-04 16:39:46,312 - INFO - Model inference completed in 1.010s
 2025-05-04 16:39:46,313 - INFO - Successfully generated audio of size: 60460 bytes in 1.825s
+2025-05-04 22:46:45,007 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-04 22:47:23,864 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-04 23:00:44,811 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:00:44,815 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:00:44,816 - INFO - Preprocessing completed in 0.000s
+2025-05-04 23:00:44,819 - INFO - Tokenization completed in 0.003s
+2025-05-04 23:01:12,192 - INFO - Model inference completed in 27.372s
+2025-05-04 23:01:12,198 - INFO - Successfully generated audio of size: 129068 bytes in 32.689s
+2025-05-04 23:01:35,880 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:01:35,883 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:01:35,884 - INFO - Preprocessing completed in 0.000s
+2025-05-04 23:01:35,885 - INFO - Tokenization completed in 0.001s
+2025-05-04 23:01:59,916 - INFO - Model inference completed in 24.030s
+2025-05-04 23:01:59,920 - INFO - Successfully generated audio of size: 131116 bytes in 28.763s
+2025-05-04 23:04:19,220 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:04:19,226 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:04:19,228 - INFO - Preprocessing completed in 0.001s
+2025-05-04 23:04:19,230 - INFO - Tokenization completed in 0.001s
+2025-05-04 23:04:46,569 - INFO - Model inference completed in 27.336s
+2025-05-04 23:04:46,570 - INFO - Successfully generated audio of size: 127020 bytes in 32.183s
+2025-05-04 23:13:45,816 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:13:45,820 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:13:45,823 - INFO - Preprocessing completed in 0.002s
+2025-05-04 23:13:45,826 - INFO - Tokenization completed in 0.000s
+2025-05-04 23:14:11,833 - INFO - Model inference completed in 26.007s
+2025-05-04 23:14:11,838 - INFO - Successfully generated audio of size: 134188 bytes in 30.699s
+2025-05-04 23:19:24,132 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:19:24,135 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:19:24,137 - INFO - Preprocessing completed in 0.000s
+2025-05-04 23:19:24,142 - INFO - Tokenization completed in 0.003s
+2025-05-04 23:19:51,350 - INFO - Model inference completed in 27.207s
+2025-05-04 23:19:51,358 - INFO - Successfully generated audio of size: 131116 bytes in 32.407s
+2025-05-04 23:21:04,980 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:21:04,985 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:21:04,987 - INFO - Preprocessing completed in 0.001s
+2025-05-04 23:21:04,994 - INFO - Tokenization completed in 0.006s
+2025-05-04 23:21:04,996 - INFO - Long text detected, processing in chunks
+2025-05-04 23:25:59,706 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<<coroutine without __name__>()> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\server\server.py", line 283, in <module>
+  File "C:\Users\muham\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+  File "C:\Users\muham\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\muham\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+  File "C:\Users\muham\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+  File "C:\Users\muham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 702, in _handle_exceptions
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 689, in grpc._cython.cygrpc._handle_exceptions
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 821, in _handle_rpc
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 554, in _handle_unary_unary_rpc
+  File "src\python\grpcio\grpc\_cython\_cygrpc/aio/server.pyx.pxi", line 408, in _finish_handler_with_unary_response
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\server\server.py", line 162, in GenerateSpeech
+    for chunk in chunks:
+                      ^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\transformers\models\speecht5\modeling_speecht5.py", line 2937, in generate_speech
+    return _generate_speech(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\transformers\models\speecht5\modeling_speecht5.py", line 2523, in _generate_speech
+    decoder_out = model.speecht5.decoder.wrapped_decoder(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\transformers\models\speecht5\modeling_speecht5.py", line 1659, in forward
+    layer_outputs = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\transformers\models\speecht5\modeling_speecht5.py", line 1176, in forward
+    hidden_states, cross_attn_weights, cross_attn_present_key_value = self.encoder_attn(
+                                                                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\transformers\models\speecht5\modeling_speecht5.py", line 945, in forward
+    attn_weights = torch.bmm(query_states, key_states.transpose(1, 2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\OneDrive\Desktop\Uni\NLP\Project\NLP-Story2Audio\venv\Lib\site-packages\torch\utils\_device.py", line 104, in __torch_function__
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\muham\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+2025-05-04 23:54:53,321 - INFO - Enabled aggressive CUDA memory garbage collection
+2025-05-04 23:55:14,005 - WARNING - Speaker 'Default' not found, using default.
+2025-05-04 23:55:14,007 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-04 23:55:14,008 - INFO - Preprocessing completed in 0.001s
+2025-05-04 23:55:14,010 - INFO - Tokenization completed in 0.002s
+2025-05-04 23:55:16,291 - INFO - Model inference completed in 2.281s
+2025-05-04 23:55:16,293 - INFO - Successfully generated audio of size: 125996 bytes in 4.061s
+2025-05-05 00:35:27,055 - INFO - CUDA available: True
+2025-05-05 00:35:27,061 - INFO - CUDA device: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-05-05 00:35:27,061 - INFO - Enabled aggressive CUDA memory garbage collection
+2025-05-05 00:36:39,604 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:37:39,760 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:38:39,912 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:39:40,063 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:40:40,228 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:41:40,389 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:42:47,530 - INFO - CUDA available: True
+2025-05-05 00:42:47,539 - INFO - CUDA device: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-05-05 00:42:47,539 - INFO - Enabled aggressive CUDA memory garbage collection
+2025-05-05 00:43:57,222 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:44:57,395 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:45:57,571 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:46:57,756 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:47:57,925 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:48:58,087 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:49:58,268 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:50:58,450 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:51:58,624 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:52:58,774 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:53:58,921 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:54:59,066 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:55:59,218 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:56:59,368 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:57:59,517 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:58:59,676 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 00:59:59,837 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 01:01:00,040 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 01:02:00,198 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 01:02:26,841 - INFO - CUDA available: True
+2025-05-05 01:02:26,849 - INFO - CUDA device: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-05-05 01:02:26,850 - INFO - Enabled aggressive CUDA memory garbage collection
+2025-05-05 01:03:36,268 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 01:04:36,420 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 01:05:36,585 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 01:06:36,737 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 01:07:36,898 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:39:08,451 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:40:08,659 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:41:08,865 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:42:09,088 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:43:09,291 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:44:09,504 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:45:09,718 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:46:09,931 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:47:10,149 - INFO - GPU 0 memory - Allocated: 0.60GB, Reserved: 0.64GB
+2025-05-05 02:54:43,173 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 02:54:43,246 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 02:54:43,248 - INFO - Preprocessing completed in 0.001s
+2025-05-05 02:54:43,250 - INFO - Split text into 1 chunks for processing
+2025-05-05 02:54:43,251 - INFO - Processing chunk 1/1 with 51 chars
+2025-05-05 02:54:44,610 - INFO - Chunk 1 tokenized to 53 tokens in 1.359s
+2025-05-05 02:54:49,317 - INFO - Chunk 1 audio generated in 4.707s
+2025-05-05 02:54:49,321 - INFO - Combined 1 audio chunks into final audio of length 65024
+2025-05-05 02:54:49,331 - INFO - Audio saved to generated_audio\Default_20250505_025449.wav
+2025-05-05 02:54:49,338 - INFO - Audio saved to generated_audio\Default_20250505_025449.wav
+2025-05-05 02:54:49,339 - INFO - Successfully generated audio of size: 130092 bytes in 10.420s
+2025-05-05 03:07:49,331 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:07:49,339 - INFO - Received request with text: ' Hello, this is a te...'
+2025-05-05 03:07:49,339 - INFO - Preprocessing completed in 0.000s
+2025-05-05 03:07:49,339 - INFO - Split text into 5 chunks for processing
+2025-05-05 03:07:49,339 - INFO - Processing chunk 1/5 with 279 chars
+2025-05-05 03:07:50,722 - INFO - Chunk 1 tokenized to 281 tokens in 1.382s
+2025-05-05 03:08:02,814 - INFO - Chunk 1 audio generated in 12.091s
+2025-05-05 03:08:02,827 - INFO - Processing chunk 2/5 with 290 chars
+2025-05-05 03:08:02,829 - INFO - Chunk 2 tokenized to 291 tokens in 0.002s
+2025-05-05 03:08:13,960 - INFO - Chunk 2 audio generated in 11.132s
+2025-05-05 03:08:13,983 - INFO - Processing chunk 3/5 with 280 chars
+2025-05-05 03:08:13,984 - INFO - Chunk 3 tokenized to 281 tokens in 0.001s
+2025-05-05 03:08:25,470 - INFO - Chunk 3 audio generated in 11.485s
+2025-05-05 03:08:25,481 - INFO - Processing chunk 4/5 with 290 chars
+2025-05-05 03:08:25,482 - INFO - Chunk 4 tokenized to 291 tokens in 0.001s
+2025-05-05 03:08:37,383 - INFO - Chunk 4 audio generated in 11.900s
+2025-05-05 03:08:37,393 - INFO - Processing chunk 5/5 with 228 chars
+2025-05-05 03:08:37,393 - INFO - Chunk 5 tokenized to 229 tokens in 0.000s
+2025-05-05 03:08:46,676 - INFO - Chunk 5 audio generated in 9.283s
+2025-05-05 03:08:46,690 - INFO - Combined 5 audio chunks into final audio of length 1708544
+2025-05-05 03:08:46,784 - INFO - Audio saved to generated_audio\Default_20250505_030846.wav
+2025-05-05 03:08:46,822 - INFO - Audio saved to generated_audio\Default_20250505_030846.wav
+2025-05-05 03:08:46,823 - INFO - Successfully generated audio of size: 3417132 bytes in 61.195s
+2025-05-05 03:11:18,231 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:11:18,239 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 03:11:18,239 - INFO - Preprocessing completed in 0.000s
+2025-05-05 03:11:18,239 - INFO - Split text into 12 chunks for processing
+2025-05-05 03:11:18,239 - INFO - Processing chunk 1/12 with 279 chars
+2025-05-05 03:11:19,599 - INFO - Chunk 1 tokenized to 281 tokens in 1.360s
+2025-05-05 03:11:31,664 - INFO - Chunk 1 audio generated in 12.064s
+2025-05-05 03:11:31,676 - INFO - Processing chunk 2/12 with 290 chars
+2025-05-05 03:11:31,678 - INFO - Chunk 2 tokenized to 291 tokens in 0.000s
+2025-05-05 03:11:42,226 - INFO - Chunk 2 audio generated in 10.546s
+2025-05-05 03:11:42,245 - INFO - Processing chunk 3/12 with 280 chars
+2025-05-05 03:11:42,248 - INFO - Chunk 3 tokenized to 281 tokens in 0.003s
+2025-05-05 03:11:53,183 - INFO - Chunk 3 audio generated in 10.936s
+2025-05-05 03:11:53,198 - INFO - Processing chunk 4/12 with 290 chars
+2025-05-05 03:11:53,198 - INFO - Chunk 4 tokenized to 291 tokens in 0.000s
+2025-05-05 03:12:03,803 - INFO - Chunk 4 audio generated in 10.605s
+2025-05-05 03:12:03,814 - INFO - Processing chunk 5/12 with 279 chars
+2025-05-05 03:12:03,816 - INFO - Chunk 5 tokenized to 280 tokens in 0.002s
+2025-05-05 03:12:14,666 - INFO - Chunk 5 audio generated in 10.849s
+2025-05-05 03:12:14,680 - INFO - Processing chunk 6/12 with 290 chars
+2025-05-05 03:12:14,682 - INFO - Chunk 6 tokenized to 291 tokens in 0.002s
+2025-05-05 03:12:26,393 - INFO - Chunk 6 audio generated in 11.711s
+2025-05-05 03:12:26,413 - INFO - Processing chunk 7/12 with 280 chars
+2025-05-05 03:12:26,413 - INFO - Chunk 7 tokenized to 281 tokens in 0.000s
+2025-05-05 03:12:37,730 - INFO - Chunk 7 audio generated in 11.317s
+2025-05-05 03:12:37,746 - INFO - Processing chunk 8/12 with 290 chars
+2025-05-05 03:12:37,749 - INFO - Chunk 8 tokenized to 291 tokens in 0.003s
+2025-05-05 03:12:48,595 - INFO - Chunk 8 audio generated in 10.846s
+2025-05-05 03:12:48,609 - INFO - Processing chunk 9/12 with 280 chars
+2025-05-05 03:12:48,611 - INFO - Chunk 9 tokenized to 281 tokens in 0.002s
+2025-05-05 03:13:00,338 - INFO - Chunk 9 audio generated in 11.727s
+2025-05-05 03:13:00,352 - INFO - Processing chunk 10/12 with 290 chars
+2025-05-05 03:13:00,352 - INFO - Chunk 10 tokenized to 291 tokens in 0.000s
+2025-05-05 03:13:10,995 - INFO - Chunk 10 audio generated in 10.643s
+2025-05-05 03:13:11,006 - INFO - Processing chunk 11/12 with 280 chars
+2025-05-05 03:13:11,008 - INFO - Chunk 11 tokenized to 281 tokens in 0.002s
+2025-05-05 03:13:22,418 - INFO - Chunk 11 audio generated in 11.410s
+2025-05-05 03:13:22,432 - INFO - Processing chunk 12/12 with 62 chars
+2025-05-05 03:13:22,432 - INFO - Chunk 12 tokenized to 63 tokens in 0.000s
+2025-05-05 03:13:24,945 - INFO - Chunk 12 audio generated in 2.513s
+2025-05-05 03:13:24,953 - INFO - Combined 12 audio chunks into final audio of length 3919872
+2025-05-05 03:13:25,089 - INFO - Audio saved to generated_audio\Default_20250505_031324.wav
+2025-05-05 03:13:25,181 - INFO - Audio saved to generated_audio\Default_20250505_031325.wav
+2025-05-05 03:13:25,181 - INFO - Successfully generated audio of size: 7839788 bytes in 130.803s
+2025-05-05 03:14:00,464 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:14:00,464 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 03:14:00,464 - INFO - Preprocessing completed in 0.000s
+2025-05-05 03:14:00,464 - INFO - Split text into 3 chunks for processing
+2025-05-05 03:14:00,464 - INFO - Processing chunk 1/3 with 279 chars
+2025-05-05 03:14:01,819 - INFO - Chunk 1 tokenized to 281 tokens in 1.355s
+2025-05-05 03:14:13,908 - INFO - Chunk 1 audio generated in 12.087s
+2025-05-05 03:14:13,923 - INFO - Processing chunk 2/3 with 295 chars
+2025-05-05 03:14:13,925 - INFO - Chunk 2 tokenized to 296 tokens in 0.002s
+2025-05-05 03:14:23,995 - INFO - Chunk 2 audio generated in 10.071s
+2025-05-05 03:14:24,009 - INFO - Processing chunk 3/3 with 243 chars
+2025-05-05 03:14:24,010 - INFO - Chunk 3 tokenized to 244 tokens in 0.001s
+2025-05-05 03:14:35,009 - INFO - Chunk 3 audio generated in 10.997s
+2025-05-05 03:14:35,022 - INFO - Combined 3 audio chunks into final audio of length 1016320
+2025-05-05 03:14:35,121 - INFO - Audio saved to generated_audio\Default_20250505_031435.wav
+2025-05-05 03:14:35,145 - INFO - Audio saved to generated_audio\Default_20250505_031435.wav
+2025-05-05 03:14:35,146 - INFO - Successfully generated audio of size: 2032684 bytes in 38.738s
+2025-05-05 03:21:16,076 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:21:16,077 - INFO - Received request with text: 'This is a test of th...'
+2025-05-05 03:21:16,077 - INFO - Preprocessing completed in 0.000s
+2025-05-05 03:21:16,077 - INFO - Split text into 8 chunks for processing
+2025-05-05 03:21:16,077 - INFO - Processing chunk 1/8 with 250 chars
+2025-05-05 03:21:16,079 - INFO - Chunk 1 tokenized to 252 tokens in 0.002s
+2025-05-05 03:21:21,905 - INFO - Chunk 1 audio generated in 5.826s
+2025-05-05 03:21:21,913 - INFO - Processing chunk 2/8 with 264 chars
+2025-05-05 03:21:21,914 - INFO - Chunk 2 tokenized to 265 tokens in 0.001s
+2025-05-05 03:21:27,350 - INFO - Chunk 2 audio generated in 5.437s
+2025-05-05 03:21:27,357 - INFO - Processing chunk 3/8 with 251 chars
+2025-05-05 03:21:27,359 - INFO - Chunk 3 tokenized to 252 tokens in 0.001s
+2025-05-05 03:21:32,275 - INFO - Chunk 3 audio generated in 4.916s
+2025-05-05 03:21:32,281 - INFO - Processing chunk 4/8 with 264 chars
+2025-05-05 03:21:32,282 - INFO - Chunk 4 tokenized to 265 tokens in 0.000s
+2025-05-05 03:21:36,708 - INFO - Chunk 4 audio generated in 4.426s
+2025-05-05 03:21:36,713 - INFO - Processing chunk 5/8 with 251 chars
+2025-05-05 03:21:36,714 - INFO - Chunk 5 tokenized to 252 tokens in 0.001s
+2025-05-05 03:21:42,145 - INFO - Chunk 5 audio generated in 5.431s
+2025-05-05 03:21:42,151 - INFO - Processing chunk 6/8 with 264 chars
+2025-05-05 03:21:42,152 - INFO - Chunk 6 tokenized to 265 tokens in 0.001s
+2025-05-05 03:21:47,745 - INFO - Chunk 6 audio generated in 5.593s
+2025-05-05 03:21:47,752 - INFO - Processing chunk 7/8 with 251 chars
+2025-05-05 03:21:47,754 - INFO - Chunk 7 tokenized to 252 tokens in 0.001s
+2025-05-05 03:21:53,028 - INFO - Chunk 7 audio generated in 5.273s
+2025-05-05 03:21:53,035 - INFO - Processing chunk 8/8 with 58 chars
+2025-05-05 03:21:53,035 - INFO - Chunk 8 tokenized to 59 tokens in 0.000s
+2025-05-05 03:21:54,213 - INFO - Chunk 8 audio generated in 1.178s
+2025-05-05 03:21:54,215 - INFO - Combined 8 audio chunks into final audio of length 2382848
+2025-05-05 03:21:54,231 - INFO - Audio saved to generated_audio\Default_20250505_032154.wav
+2025-05-05 03:21:54,258 - INFO - Audio saved to generated_audio\Default_20250505_032154.wav
+2025-05-05 03:21:54,259 - INFO - Successfully generated audio of size: 4765740 bytes in 39.891s
+2025-05-05 03:23:49,442 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:23:49,443 - INFO - Received request with text: 'This is a test of th...'
+2025-05-05 03:23:49,444 - INFO - Preprocessing completed in 0.001s
+2025-05-05 03:23:49,444 - INFO - Split text into 14 chunks for processing
+2025-05-05 03:23:49,444 - INFO - Processing chunk 1/14 with 250 chars
+2025-05-05 03:23:49,446 - INFO - Chunk 1 tokenized to 252 tokens in 0.003s
+2025-05-05 03:23:53,990 - INFO - Chunk 1 audio generated in 4.544s
+2025-05-05 03:23:53,998 - INFO - Processing chunk 2/14 with 264 chars
+2025-05-05 03:23:53,999 - INFO - Chunk 2 tokenized to 265 tokens in 0.001s
+2025-05-05 03:23:58,920 - INFO - Chunk 2 audio generated in 4.920s
+2025-05-05 03:23:58,925 - INFO - Processing chunk 3/14 with 251 chars
+2025-05-05 03:23:58,926 - INFO - Chunk 3 tokenized to 252 tokens in 0.002s
+2025-05-05 03:24:04,273 - INFO - Chunk 3 audio generated in 5.346s
+2025-05-05 03:24:04,280 - INFO - Processing chunk 4/14 with 264 chars
+2025-05-05 03:24:04,281 - INFO - Chunk 4 tokenized to 265 tokens in 0.001s
+2025-05-05 03:24:09,188 - INFO - Chunk 4 audio generated in 4.907s
+2025-05-05 03:24:09,198 - INFO - Processing chunk 5/14 with 251 chars
+2025-05-05 03:24:09,199 - INFO - Chunk 5 tokenized to 252 tokens in 0.001s
+2025-05-05 03:24:14,467 - INFO - Chunk 5 audio generated in 5.268s
+2025-05-05 03:24:14,474 - INFO - Processing chunk 6/14 with 264 chars
+2025-05-05 03:24:14,474 - INFO - Chunk 6 tokenized to 265 tokens in 0.000s
+2025-05-05 03:24:19,543 - INFO - Chunk 6 audio generated in 5.067s
+2025-05-05 03:24:19,548 - INFO - Processing chunk 7/14 with 251 chars
+2025-05-05 03:24:19,549 - INFO - Chunk 7 tokenized to 252 tokens in 0.001s
+2025-05-05 03:24:24,747 - INFO - Chunk 7 audio generated in 5.197s
+2025-05-05 03:24:24,753 - INFO - Processing chunk 8/14 with 264 chars
+2025-05-05 03:24:24,754 - INFO - Chunk 8 tokenized to 265 tokens in 0.001s
+2025-05-05 03:24:30,423 - INFO - Chunk 8 audio generated in 5.669s
+2025-05-05 03:24:30,431 - INFO - Processing chunk 9/14 with 251 chars
+2025-05-05 03:24:30,432 - INFO - Chunk 9 tokenized to 252 tokens in 0.001s
+2025-05-05 03:24:36,005 - INFO - Chunk 9 audio generated in 5.573s
+2025-05-05 03:24:36,013 - INFO - Processing chunk 10/14 with 264 chars
+2025-05-05 03:24:36,014 - INFO - Chunk 10 tokenized to 265 tokens in 0.001s
+2025-05-05 03:24:41,452 - INFO - Chunk 10 audio generated in 5.439s
+2025-05-05 03:24:41,458 - INFO - Processing chunk 11/14 with 251 chars
+2025-05-05 03:24:41,459 - INFO - Chunk 11 tokenized to 252 tokens in 0.000s
+2025-05-05 03:24:46,265 - INFO - Chunk 11 audio generated in 4.806s
+2025-05-05 03:24:46,271 - INFO - Processing chunk 12/14 with 264 chars
+2025-05-05 03:24:46,272 - INFO - Chunk 12 tokenized to 265 tokens in 0.001s
+2025-05-05 03:24:51,258 - INFO - Chunk 12 audio generated in 4.986s
+2025-05-05 03:24:51,264 - INFO - Processing chunk 13/14 with 251 chars
+2025-05-05 03:24:51,265 - INFO - Chunk 13 tokenized to 252 tokens in 0.001s
+2025-05-05 03:24:56,144 - INFO - Chunk 13 audio generated in 4.880s
+2025-05-05 03:24:56,149 - INFO - Processing chunk 14/14 with 264 chars
+2025-05-05 03:24:56,150 - INFO - Chunk 14 tokenized to 265 tokens in 0.001s
+2025-05-05 03:25:01,688 - INFO - Chunk 14 audio generated in 5.538s
+2025-05-05 03:25:01,698 - INFO - Combined 14 audio chunks into final audio of length 4531200
+2025-05-05 03:25:01,734 - INFO - Audio saved to generated_audio\Default_20250505_032501.wav
+2025-05-05 03:25:01,792 - INFO - Audio saved to generated_audio\Default_20250505_032501.wav
+2025-05-05 03:25:01,792 - INFO - Successfully generated audio of size: 9062444 bytes in 74.098s
+2025-05-05 03:25:03,604 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:25:03,605 - INFO - Received request with text: 'Hello, this is a tes...'
+2025-05-05 03:25:03,605 - INFO - Preprocessing completed in 0.000s
+2025-05-05 03:25:03,605 - INFO - Split text into 1 chunks for processing
+2025-05-05 03:25:03,605 - INFO - Processing chunk 1/1 with 51 chars
+2025-05-05 03:25:03,606 - INFO - Chunk 1 tokenized to 53 tokens in 0.002s
+2025-05-05 03:25:04,680 - INFO - Chunk 1 audio generated in 1.074s
+2025-05-05 03:25:04,683 - INFO - Combined 1 audio chunks into final audio of length 62976
+2025-05-05 03:25:04,688 - INFO - Audio saved to generated_audio\Default_20250505_032504.wav
+2025-05-05 03:25:04,692 - INFO - Audio saved to generated_audio\Default_20250505_032504.wav
+2025-05-05 03:25:04,692 - INFO - Successfully generated audio of size: 125996 bytes in 2.893s
+2025-05-05 03:31:22,289 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:31:22,290 - INFO - Received request with text: 'This is a test of th...'
+2025-05-05 03:31:22,291 - INFO - Preprocessing completed in 0.001s
+2025-05-05 03:31:22,291 - INFO - Split text into 12 chunks for processing
+2025-05-05 03:31:22,291 - INFO - Processing chunk 1/12 with 250 chars
+2025-05-05 03:31:22,293 - INFO - Chunk 1 tokenized to 252 tokens in 0.002s
+2025-05-05 03:31:28,258 - INFO - Chunk 1 audio generated in 5.965s
+2025-05-05 03:31:28,273 - INFO - Processing chunk 2/12 with 264 chars
+2025-05-05 03:31:28,274 - INFO - Chunk 2 tokenized to 265 tokens in 0.001s
+2025-05-05 03:31:33,298 - INFO - Chunk 2 audio generated in 5.024s
+2025-05-05 03:31:33,305 - INFO - Processing chunk 3/12 with 251 chars
+2025-05-05 03:31:33,305 - INFO - Chunk 3 tokenized to 252 tokens in 0.001s
+2025-05-05 03:31:38,071 - INFO - Chunk 3 audio generated in 4.765s
+2025-05-05 03:31:38,077 - INFO - Processing chunk 4/12 with 264 chars
+2025-05-05 03:31:38,078 - INFO - Chunk 4 tokenized to 265 tokens in 0.001s
+2025-05-05 03:31:42,839 - INFO - Chunk 4 audio generated in 4.762s
+2025-05-05 03:31:42,844 - INFO - Processing chunk 5/12 with 251 chars
+2025-05-05 03:31:42,844 - INFO - Chunk 5 tokenized to 252 tokens in 0.000s
+2025-05-05 03:31:48,089 - INFO - Chunk 5 audio generated in 5.245s
+2025-05-05 03:31:48,098 - INFO - Processing chunk 6/12 with 264 chars
+2025-05-05 03:31:48,099 - INFO - Chunk 6 tokenized to 265 tokens in 0.001s
+2025-05-05 03:31:52,798 - INFO - Chunk 6 audio generated in 4.699s
+2025-05-05 03:31:52,803 - INFO - Processing chunk 7/12 with 251 chars
+2025-05-05 03:31:52,804 - INFO - Chunk 7 tokenized to 252 tokens in 0.000s
+2025-05-05 03:31:57,891 - INFO - Chunk 7 audio generated in 5.087s
+2025-05-05 03:31:57,896 - INFO - Processing chunk 8/12 with 264 chars
+2025-05-05 03:31:57,897 - INFO - Chunk 8 tokenized to 265 tokens in 0.001s
+2025-05-05 03:32:02,722 - INFO - Chunk 8 audio generated in 4.825s
+2025-05-05 03:32:02,727 - INFO - Processing chunk 9/12 with 251 chars
+2025-05-05 03:32:02,728 - INFO - Chunk 9 tokenized to 252 tokens in 0.001s
+2025-05-05 03:32:07,614 - INFO - Chunk 9 audio generated in 4.886s
+2025-05-05 03:32:07,620 - INFO - Processing chunk 10/12 with 264 chars
+2025-05-05 03:32:07,621 - INFO - Chunk 10 tokenized to 265 tokens in 0.001s
+2025-05-05 03:32:11,739 - INFO - Chunk 10 audio generated in 4.118s
+2025-05-05 03:32:11,744 - INFO - Processing chunk 11/12 with 251 chars
+2025-05-05 03:32:11,746 - INFO - Chunk 11 tokenized to 252 tokens in 0.002s
+2025-05-05 03:32:15,462 - INFO - Chunk 11 audio generated in 3.716s
+2025-05-05 03:32:15,468 - INFO - Processing chunk 12/12 with 58 chars
+2025-05-05 03:32:15,469 - INFO - Chunk 12 tokenized to 59 tokens in 0.001s
+2025-05-05 03:32:16,751 - INFO - Chunk 12 audio generated in 1.281s
+2025-05-05 03:32:16,756 - INFO - Combined 12 audio chunks into final audio of length 3570688
+2025-05-05 03:32:16,780 - INFO - Audio saved to generated_audio\Default_20250505_033216.wav
+2025-05-05 03:32:16,800 - INFO - Successfully generated audio of size: 7141420 bytes in 56.261s
+2025-05-05 03:38:05,477 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:38:05,479 - INFO - Received request with text: 'This is a test of th...'
+2025-05-05 03:38:05,479 - INFO - Preprocessing completed in 0.000s
+2025-05-05 03:38:05,479 - INFO - Split text into 12 chunks for processing
+2025-05-05 03:38:05,480 - INFO - Processing chunk 1/12 with 250 chars
+2025-05-05 03:38:05,481 - INFO - Chunk 1 tokenized to 252 tokens in 0.001s
+2025-05-05 03:38:10,925 - INFO - Chunk 1 audio generated in 5.444s
+2025-05-05 03:38:10,932 - INFO - Processing chunk 2/12 with 264 chars
+2025-05-05 03:38:10,934 - INFO - Chunk 2 tokenized to 265 tokens in 0.001s
+2025-05-05 03:38:15,720 - INFO - Chunk 2 audio generated in 4.786s
+2025-05-05 03:38:15,724 - INFO - Processing chunk 3/12 with 251 chars
+2025-05-05 03:38:15,725 - INFO - Chunk 3 tokenized to 252 tokens in 0.001s
+2025-05-05 03:38:20,501 - INFO - Chunk 3 audio generated in 4.775s
+2025-05-05 03:38:20,507 - INFO - Processing chunk 4/12 with 264 chars
+2025-05-05 03:38:20,508 - INFO - Chunk 4 tokenized to 265 tokens in 0.001s
+2025-05-05 03:38:25,369 - INFO - Chunk 4 audio generated in 4.860s
+2025-05-05 03:38:25,375 - INFO - Processing chunk 5/12 with 251 chars
+2025-05-05 03:38:25,376 - INFO - Chunk 5 tokenized to 252 tokens in 0.001s
+2025-05-05 03:38:29,130 - INFO - Chunk 5 audio generated in 3.754s
+2025-05-05 03:38:29,135 - INFO - Processing chunk 6/12 with 264 chars
+2025-05-05 03:38:29,136 - INFO - Chunk 6 tokenized to 265 tokens in 0.001s
+2025-05-05 03:38:34,462 - INFO - Chunk 6 audio generated in 5.326s
+2025-05-05 03:38:34,468 - INFO - Processing chunk 7/12 with 251 chars
+2025-05-05 03:38:34,468 - INFO - Chunk 7 tokenized to 252 tokens in 0.000s
+2025-05-05 03:38:39,627 - INFO - Chunk 7 audio generated in 5.157s
+2025-05-05 03:38:39,633 - INFO - Processing chunk 8/12 with 264 chars
+2025-05-05 03:38:39,634 - INFO - Chunk 8 tokenized to 265 tokens in 0.001s
+2025-05-05 03:38:44,435 - INFO - Chunk 8 audio generated in 4.800s
+2025-05-05 03:38:44,441 - INFO - Processing chunk 9/12 with 251 chars
+2025-05-05 03:38:44,442 - INFO - Chunk 9 tokenized to 252 tokens in 0.001s
+2025-05-05 03:38:49,377 - INFO - Chunk 9 audio generated in 4.935s
+2025-05-05 03:38:49,382 - INFO - Processing chunk 10/12 with 264 chars
+2025-05-05 03:38:49,382 - INFO - Chunk 10 tokenized to 265 tokens in 0.000s
+2025-05-05 03:38:54,249 - INFO - Chunk 10 audio generated in 4.866s
+2025-05-05 03:38:54,255 - INFO - Processing chunk 11/12 with 251 chars
+2025-05-05 03:38:54,256 - INFO - Chunk 11 tokenized to 252 tokens in 0.000s
+2025-05-05 03:38:59,651 - INFO - Chunk 11 audio generated in 5.395s
+2025-05-05 03:38:59,656 - INFO - Processing chunk 12/12 with 58 chars
+2025-05-05 03:38:59,657 - INFO - Chunk 12 tokenized to 59 tokens in 0.001s
+2025-05-05 03:39:00,746 - INFO - Chunk 12 audio generated in 1.089s
+2025-05-05 03:39:00,751 - INFO - Combined 12 audio chunks into final audio of length 3539968
+2025-05-05 03:39:00,779 - INFO - Audio saved to generated_audio\Default_20250505_033900.wav
+2025-05-05 03:39:00,795 - INFO - Audio size: 6.75 MB
+2025-05-05 03:39:00,795 - INFO - Successfully generated audio of size: 7079980 bytes in 57.093s
+2025-05-05 03:50:18,602 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:50:18,602 - INFO - Received request with text: 'This is a test of th...'
+2025-05-05 03:50:18,602 - INFO - Preprocessing completed in 0.000s
+2025-05-05 03:50:18,603 - INFO - Split text into 9 chunks for processing
+2025-05-05 03:50:18,603 - INFO - Processing chunk 1/9 with 250 chars
+2025-05-05 03:50:18,604 - INFO - Chunk 1 tokenized to 252 tokens in 0.001s
+2025-05-05 03:50:23,858 - INFO - Chunk 1 audio generated in 5.253s
+2025-05-05 03:50:23,865 - INFO - Processing chunk 2/9 with 264 chars
+2025-05-05 03:50:23,866 - INFO - Chunk 2 tokenized to 265 tokens in 0.001s
+2025-05-05 03:50:28,706 - INFO - Chunk 2 audio generated in 4.840s
+2025-05-05 03:50:28,712 - INFO - Processing chunk 3/9 with 251 chars
+2025-05-05 03:50:28,713 - INFO - Chunk 3 tokenized to 252 tokens in 0.001s
+2025-05-05 03:50:34,062 - INFO - Chunk 3 audio generated in 5.348s
+2025-05-05 03:50:34,068 - INFO - Processing chunk 4/9 with 264 chars
+2025-05-05 03:50:34,069 - INFO - Chunk 4 tokenized to 265 tokens in 0.001s
+2025-05-05 03:50:38,977 - INFO - Chunk 4 audio generated in 4.908s
+2025-05-05 03:50:38,984 - INFO - Processing chunk 5/9 with 251 chars
+2025-05-05 03:50:38,985 - INFO - Chunk 5 tokenized to 252 tokens in 0.001s
+2025-05-05 03:50:44,091 - INFO - Chunk 5 audio generated in 5.105s
+2025-05-05 03:50:44,097 - INFO - Processing chunk 6/9 with 264 chars
+2025-05-05 03:50:44,097 - INFO - Chunk 6 tokenized to 265 tokens in 0.000s
+2025-05-05 03:50:49,504 - INFO - Chunk 6 audio generated in 5.406s
+2025-05-05 03:50:49,510 - INFO - Processing chunk 7/9 with 251 chars
+2025-05-05 03:50:49,511 - INFO - Chunk 7 tokenized to 252 tokens in 0.000s
+2025-05-05 03:50:54,230 - INFO - Chunk 7 audio generated in 4.719s
+2025-05-05 03:50:54,235 - INFO - Processing chunk 8/9 with 264 chars
+2025-05-05 03:50:54,236 - INFO - Chunk 8 tokenized to 265 tokens in 0.001s
+2025-05-05 03:50:58,370 - INFO - Chunk 8 audio generated in 4.133s
+2025-05-05 03:50:58,376 - INFO - Processing chunk 9/9 with 206 chars
+2025-05-05 03:50:58,377 - INFO - Chunk 9 tokenized to 207 tokens in 0.000s
+2025-05-05 03:51:02,641 - INFO - Chunk 9 audio generated in 4.265s
+2025-05-05 03:51:02,650 - INFO - Combined 9 audio chunks into final audio of length 2838528
+2025-05-05 03:51:02,677 - INFO - Audio saved to generated_audio\Default_20250505_035102.wav
+2025-05-05 03:51:02,696 - INFO - Audio size: 5.41 MB
+2025-05-05 03:51:02,697 - INFO - Successfully generated audio of size: 5677100 bytes in 45.852s
+2025-05-05 03:54:08,511 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:54:08,511 - INFO - Received request with text: 'Hi my name is Shariq...'
+2025-05-05 03:54:08,513 - INFO - Preprocessing completed in 0.000s
+2025-05-05 03:54:08,513 - INFO - Split text into 1 chunks for processing
+2025-05-05 03:54:08,513 - INFO - Processing chunk 1/1 with 20 chars
+2025-05-05 03:54:08,514 - INFO - Chunk 1 tokenized to 22 tokens in 0.001s
+2025-05-05 03:54:09,086 - INFO - Chunk 1 audio generated in 0.572s
+2025-05-05 03:54:09,087 - INFO - Combined 1 audio chunks into final audio of length 22016
+2025-05-05 03:54:09,089 - INFO - Audio saved to generated_audio\Default_20250505_035409.wav
+2025-05-05 03:54:09,089 - INFO - Audio size: 0.04 MB
+2025-05-05 03:54:09,090 - INFO - Successfully generated audio of size: 44076 bytes in 2.345s
+2025-05-05 03:54:38,851 - WARNING - Speaker 'Default' not found, using default.
+2025-05-05 03:54:38,852 - INFO - Received request with text: 'Hi my name is Shariq...'
+2025-05-05 03:54:38,852 - INFO - Preprocessing completed in 0.000s
+2025-05-05 03:54:38,852 - INFO - Split text into 1 chunks for processing
+2025-05-05 03:54:38,852 - INFO - Processing chunk 1/1 with 21 chars
+2025-05-05 03:54:38,853 - INFO - Chunk 1 tokenized to 23 tokens in 0.001s
+2025-05-05 03:54:39,441 - INFO - Chunk 1 audio generated in 0.587s
+2025-05-05 03:54:39,443 - INFO - Combined 1 audio chunks into final audio of length 20992
+2025-05-05 03:54:39,447 - INFO - Audio saved to generated_audio\Default_20250505_035439.wav
+2025-05-05 03:54:39,447 - INFO - Audio size: 0.04 MB
+2025-05-05 03:54:39,448 - INFO - Successfully generated audio of size: 42028 bytes in 2.356s
