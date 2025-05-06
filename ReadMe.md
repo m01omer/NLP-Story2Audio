@@ -111,4 +111,5 @@ Here are some common issues you might encounter and potential solutions:
     * Ensure that your firewall is configured to allow incoming connections on port `8501`.
     * Use the command `netstat -tuln | grep 8501` (on Linux/macOS) or `Get-NetTCPConnection -LocalPort 8501` (on PowerShell) to check if any other process is listening on port `8501`. If so, you might need to stop that process or configure the Streamlit app to run on a different port (which would require modifying the `Dockerfile` and potentially the `docker-compose.yml`).
 
-By following these instructions, you should be able to set up and run the Real-Time Text to Speech project successfully. Enjoy experimenting with real-time text-to-speech conversion!
+By following these instructions, you should be able to set up and run the Real-Time Text to Speech project successfully. Enjoy experimenting with real-time text-to-speech conversion.
+
