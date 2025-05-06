@@ -4,7 +4,7 @@ services:
   tts-server:
     build:
       context: .
-      dockerfile: server/DockerFile
+      dockerfile: server/dockerfile
     image: project-server:latest
     container_name: tts-server
     networks:
